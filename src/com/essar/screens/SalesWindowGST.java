@@ -471,7 +471,11 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+<<<<<<< Updated upstream
         jLabel2.setForeground(new java.awt.Color(0, 153, 255));
+=======
+        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
+>>>>>>> Stashed changes
         jLabel2.setText("Bill Number:");
 
         lblUnitPrice1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -541,7 +545,11 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
 
         lblSalesDate.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+<<<<<<< Updated upstream
         lblSalesDate.setForeground(new java.awt.Color(0, 153, 255));
+=======
+        lblSalesDate.setForeground(new java.awt.Color(51, 153, 255));
+>>>>>>> Stashed changes
         lblSalesDate.setText("Sales Date");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Payment Type"));
@@ -1453,10 +1461,17 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
             reportString="src\\com\\essar\\reports\\b2c.jrxml";
             desiredPrinter = b2c_printer;
         }*/
+<<<<<<< Updated upstream
         desiredPrinter = b2b_printer;
         reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
         if(chkBankDetails.isSelected())
             reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
+=======
+        reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
+        if(chkBankDetails.isSelected())
+            reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
+        desiredPrinter = b2b_printer;
+>>>>>>> Stashed changes
 
         //reportString="src\\com\\essar\\reports\\b2c.jrxml";
         JasperReport jr = null;

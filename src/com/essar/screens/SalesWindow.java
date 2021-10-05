@@ -1454,11 +1454,18 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             reportString="src\\com\\essar\\reports\\b2c.jrxml";
             desiredPrinter = b2c_printer;
         }*/
+<<<<<<< Updated upstream
         
         desiredPrinter = b2b_printer;
         reportString="src\\com\\essar\\reports\\b2b.jrxml";
         if(chkBankDetails.isSelected())
             reportString="src\\com\\essar\\reports\\b2b_Acc.jrxml";
+=======
+        reportString="src\\com\\essar\\reports\\b2b.jrxml";
+        if(chkBankDetails.isSelected())
+            reportString="src\\com\\essar\\reports\\b2b_Acc.jrxml";
+        desiredPrinter = b2b_printer;
+>>>>>>> Stashed changes
 
         //reportString="src\\com\\essar\\reports\\b2c.jrxml";
         JasperReport jr = null;

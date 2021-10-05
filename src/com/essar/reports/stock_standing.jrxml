@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e688591f-b03a-4933-9386-4ca0e1f46f88">
 	<property name="ireport.zoom" value="1.2100000000000002"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -31,14 +31,14 @@
 		<groupFooter>
 			<band height="25">
 				<textField pattern="#,##0.00">
-					<reportElement x="462" y="2" width="93" height="20"/>
+					<reportElement x="462" y="2" width="93" height="20" uuid="6f8acad2-3f20-42a6-929d-01ab160f0b22"/>
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{total_stock_value}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-					<reportElement x="389" y="2" width="73" height="20"/>
+					<reportElement x="389" y="2" width="73" height="20" uuid="99e9c329-1b4f-463f-9d42-37e8ce961306"/>
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" isBold="true"/>
 					</textElement>
@@ -53,59 +53,48 @@
 	<title>
 		<band height="98">
 			<frame>
-				<reportElement mode="Opaque" x="3" y="0" width="553" height="87" backcolor="#006699"/>
-				<staticText>
-					<reportElement x="151" y="0" width="274" height="36" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font fontName="SansSerif" size="24" isBold="true"/>
-					</textElement>
-					<text><![CDATA[HANEEFA STORES]]></text>
-				</staticText>
-				<image scaleImage="RealSize">
-					<reportElement x="79" y="3" width="61" height="56"/>
-					<imageExpression><![CDATA["D:\\Applications\\Tienda\\images\\haneefa_stores.png"]]></imageExpression>
-				</image>
-				<staticText>
-					<reportElement x="150" y="49" width="274" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font size="10"/>
-					</textElement>
-					<text><![CDATA[Venjaramoodu, Thiruvananthapuram, Kerala. 695607]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="150" y="73" width="274" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font size="10"/>
-					</textElement>
-					<text><![CDATA[email:haneefastoresvjmd@gmail.com]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="150" y="62" width="274" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font size="10"/>
-					</textElement>
-					<text><![CDATA[Ph:+91 8943353373, 9947753843.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="150" y="37" width="274" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" size="10"/>
-					</textElement>
-					<text><![CDATA[N.P-VI-162-A, Thaj Buildings, Opp: Govt High School]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="150" y="26" width="274" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Right">
-						<font fontName="DejaVu Sans Mono" size="9"/>
-					</textElement>
-					<text><![CDATA[MYLAKKAL GROUP]]></text>
-				</staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="553" height="87" backcolor="#006699" uuid="ad4ba2e2-11e9-4527-9ff7-16a7fabc5518"/>
 				<line>
-					<reportElement x="150" y="35" width="280" height="1" forecolor="#FFFFFF"/>
+					<reportElement x="150" y="35" width="280" height="1" forecolor="#FFFFFF" uuid="d1c52133-e9ca-492f-824d-c53ece962e3e"/>
 					<graphicElement>
 						<pen lineWidth="0.75" lineStyle="Dotted"/>
 					</graphicElement>
 				</line>
+				<staticText>
+					<reportElement x="150" y="50" width="283" height="14" forecolor="#FFFFFF" uuid="1f826bc4-2740-4d44-91c7-13f9639972d9"/>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="151" y="0" width="274" height="36" forecolor="#FFFFFF" uuid="af014e40-f964-4452-bc4e-f540c8d9575a"/>
+					<textElement textAlignment="Center">
+						<font fontName="SansSerif" size="28" isBold="true"/>
+					</textElement>
+					<text><![CDATA[A.R. TRADERS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="150" y="36" width="283" height="14" forecolor="#FFFFFF" uuid="4e536d3f-db79-45f3-b1bf-09fd3bccbc1d"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="150" y="73" width="283" height="14" forecolor="#FFFFFF" uuid="3864f063-72cf-4cd4-8eae-82f627eb70c4"/>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[email:artradersvpm@gmail.com]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="150" y="64" width="283" height="13" forecolor="#FFFFFF" uuid="985a0256-a78a-4779-bc3b-476b6ec27e70"/>
+					<textElement textAlignment="Center">
+						<font fontName="SansSerif" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
+				</staticText>
 			</frame>
 		</band>
 	</title>
@@ -115,49 +104,49 @@
 	<columnHeader>
 		<band height="17">
 			<staticText>
-				<reportElement mode="Opaque" x="2" y="0" width="36" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="2" y="0" width="36" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="e26e7ed3-dd4f-41a2-ae6b-838851063ce4"/>
 				<textElement>
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Sl.No:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="100" y="0" width="204" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="100" y="0" width="204" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="2a12a5c0-f10a-49ae-a0f9-8006e2d94e73"/>
 				<textElement>
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Item Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="343" y="0" width="68" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="343" y="0" width="68" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="8e60c470-deb9-4ab0-8750-e2e38232c265"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Landing Price]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="304" y="0" width="39" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="304" y="0" width="39" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="ad15c3d7-7d99-4db7-a273-3d9efa5de338"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GST%]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="411" y="0" width="51" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="411" y="0" width="51" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="3c604f52-6c8a-4bd8-b5a8-a873804a23c1"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Quantity]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="37" y="0" width="63" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="37" y="0" width="63" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="42827466-95bd-466f-a38f-6ad6c1bb9c92"/>
 				<textElement>
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[HSN Code]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="462" y="0" width="91" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="462" y="0" width="91" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="345f9224-5507-40b3-be85-1bf57af1b352"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
@@ -168,46 +157,46 @@
 	<detail>
 		<band height="17">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="35" y="0" width="63" height="13"/>
+				<reportElement x="35" y="0" width="63" height="13" uuid="a41dc526-f420-4525-ade0-b2ca90ead4ac"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hsn_code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="100" y="0" width="204" height="13"/>
+				<reportElement x="100" y="0" width="204" height="13" uuid="ed1fe41e-8699-42f3-a1b5-51c25f0a0b86"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="362" y="0" width="49" height="13"/>
+				<reportElement x="362" y="0" width="49" height="13" uuid="8991f272-ea92-470d-b392-3a1f972595ff"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{purchase_price}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="###0.0">
-				<reportElement x="319" y="0" width="24" height="13"/>
+				<reportElement x="319" y="0" width="24" height="13" uuid="478a996e-f9af-4a95-85f8-4879b4530b69"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{gst_percentage}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="425" y="0" width="37" height="13"/>
+				<reportElement x="425" y="0" width="37" height="13" uuid="51184766-7b09-4f44-8adf-804fc4e8c845"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_standing}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="2" y="0" width="33" height="13"/>
+				<reportElement x="2" y="0" width="33" height="13" uuid="13c35d25-4cd7-44fa-8134-5c3914858fbc"/>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="462" y="0" width="91" height="13"/>
+				<reportElement x="462" y="0" width="91" height="13" uuid="fcc694ff-6d72-4386-b5e0-3c4e265dd348"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
@@ -221,16 +210,16 @@
 	<pageFooter>
 		<band height="39">
 			<textField>
-				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="9e7be40e-4b46-47f2-8196-d8b656d2e968"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="3608d147-3957-4831-9722-bbc71de250ef"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="0" y="4" width="100" height="13"/>
+				<reportElement x="0" y="4" width="100" height="13" uuid="3edfdb9b-a976-4338-b6e8-22561fb06607"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>

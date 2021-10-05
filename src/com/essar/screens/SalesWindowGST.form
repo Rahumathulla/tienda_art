@@ -586,7 +586,11 @@
               <Font name="Tahoma" size="12" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
               <Color blue="ff" green="99" red="0" type="rgb"/>
+=======
+              <Color blue="ff" green="99" red="33" type="rgb"/>
+>>>>>>> Stashed changes
             </Property>
             <Property name="text" type="java.lang.String" value="Bill Number:"/>
           </Properties>
@@ -693,7 +697,11 @@
               <Font name="Tahoma" size="12" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
               <Color blue="ff" green="99" red="0" type="rgb"/>
+=======
+              <Color blue="ff" green="99" red="33" type="rgb"/>
+>>>>>>> Stashed changes
             </Property>
             <Property name="text" type="java.lang.String" value="Sales Date"/>
           </Properties>

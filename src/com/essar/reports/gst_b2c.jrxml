@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74a7df70-c13b-4ea4-94b5-0125ad7570ff">
+=======
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1891acb-8891-44f2-bf74-43f0d17153c0">
+>>>>>>> Stashed changes
 	<property name="ireport.zoom" value="1.3310000000000008"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -126,55 +130,98 @@
 	<title>
 		<band height="128" splitType="Stretch">
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="446" y="92" width="27" height="13" uuid="2830527b-c948-4321-a188-270ebbc966db"/>
+=======
+				<reportElement x="446" y="92" width="27" height="13" uuid="ef4ed39d-cbb7-4ed7-a7f8-e0706c0dc81a"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Date: ]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy">
+<<<<<<< Updated upstream
 				<reportElement x="473" y="92" width="79" height="13" uuid="206f94ad-1349-4097-8065-29993067a8e7"/>
+=======
+				<reportElement x="473" y="92" width="79" height="13" uuid="43fcbc0f-d576-4081-ad01-22a97572dd24"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="216" y="104" width="161" height="23" uuid="d23c2191-90cc-48d9-ad54-7a67562d74b7"/>
+=======
+				<reportElement x="216" y="104" width="161" height="23" uuid="570ede34-7665-44f2-aebd-bfb1e2ff6592"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
 					<font size="12" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[SALES SUMMARY]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="0" y="83" width="139" height="15" uuid="8280ec59-4c70-4c49-b436-d1c1a9d56433"/>
+=======
+				<reportElement x="0" y="83" width="139" height="15" uuid="2587dda0-bfe7-4075-a451-4d5e156ba532"/>
+>>>>>>> Stashed changes
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial" size="10"/>
 				</textElement>
 				<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="1" y="66" width="87" height="15" uuid="a1cd699b-4024-45af-b22a-e3348b695b40"/>
+=======
+				<reportElement x="1" y="66" width="87" height="15" uuid="4a571a17-de94-4b04-ac4b-90f51da60115"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[State : Kerala]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="144" y="10" width="283" height="36" uuid="95b7bfc6-2540-4ec5-8e7c-c6ae54b7a3a4"/>
 				<textElement textAlignment="Center">
+=======
+				<reportElement x="147" y="58" width="283" height="14" uuid="d18a4c46-42fa-425e-bd04-5d68f7c2bca7"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="6" width="283" height="36" uuid="16a65d39-c1a7-42cc-8807-2a5796f0d37a"/>
+				<textElement textAlignment="Center">
+>>>>>>> Stashed changes
 					<font fontName="SansSerif" size="28" isBold="true"/>
 				</textElement>
 				<text><![CDATA[A.R. TRADERS]]></text>
 			</staticText>
+			<line>
+				<reportElement x="139" y="44" width="316" height="1" forecolor="#666666" uuid="0523f9c2-1e35-4127-bab5-2859ae442926"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="144" y="46" width="283" height="14" uuid="57e5c5e2-d603-4f94-96b8-b82731be91f0"/>
+=======
+				<reportElement x="147" y="45" width="283" height="14" uuid="692690d3-9b20-4eda-9689-ccff21d38289"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="144" y="59" width="283" height="14" uuid="f3d889a2-3895-42a5-b869-03f09102efaf"/>
 				<textElement textAlignment="Center">
 					<font size="10" isBold="true"/>
@@ -194,88 +241,148 @@
 				</textElement>
 				<text><![CDATA[email:artradersvpm@gmail.com]]></text>
 			</staticText>
+=======
+				<reportElement x="147" y="83" width="283" height="14" uuid="9e3c26b5-4adc-40ea-8c66-57c617e841af"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[email:artradersvpm@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="71" width="283" height="13" uuid="0ea54eb8-d34c-4bde-93bb-4c4657dc73a2"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
+			</staticText>
+>>>>>>> Stashed changes
 		</band>
 	</title>
 	<pageHeader>
 		<band height="36" splitType="Stretch">
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="3" y="11" width="48" height="12" uuid="26a6314b-d711-48f9-9202-ba0fbe01d4f5"/>
+=======
+				<reportElement x="3" y="11" width="48" height="12" uuid="a884bbce-95be-4d17-bf02-ad46be46b673"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Bill No:]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="443" y="11" width="45" height="12" uuid="f29ddf3e-1f91-426f-a535-33f247bf42e4"/>
+=======
+				<reportElement x="443" y="11" width="45" height="12" uuid="339417fb-ce58-4267-8ecc-27cfcd5a93f6"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Total GST Amt]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="57" y="11" width="53" height="12" uuid="d08b3497-f309-4754-8689-1a30795c2f4c"/>
+=======
+				<reportElement x="57" y="11" width="53" height="12" uuid="6d8f4e43-326b-4069-8e3b-ccee7d54d5b9"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Bill Date]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="184" y="23" width="43" height="12" uuid="120a3ab2-a9d0-432c-9976-c3958f1a0ced"/>
+=======
+				<reportElement x="184" y="23" width="43" height="12" uuid="b78f9d68-e861-4e10-83c5-1018e0c68ecd"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[At 12%]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="358" y="11" width="42" height="12" uuid="c564dc6f-d346-4ac5-9788-431d2179744e"/>
+=======
+				<reportElement x="358" y="11" width="42" height="12" uuid="2e5bf800-ced1-4709-a4f3-d0f83c21ada3"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[SGST Amt]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="272" y="23" width="48" height="12" uuid="d535d9ad-72d8-49ef-894a-508d5b3793d1"/>
+=======
+				<reportElement x="272" y="23" width="48" height="12" uuid="4f2b101d-55b3-4897-ae08-7440bd873046"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[At 28%]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="323" y="11" width="33" height="12" uuid="90225548-c80a-495f-897c-a3e6a9205e7b"/>
+=======
+				<reportElement x="323" y="11" width="33" height="12" uuid="a0667e3e-e321-4526-a4c0-c773b2a65a31"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[IGST Amt]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="498" y="11" width="54" height="12" uuid="bbc6d6fe-d617-4ae2-b126-37878c41209c"/>
+=======
+				<reportElement x="498" y="11" width="54" height="12" uuid="519cdcd3-a064-46d7-8701-6f7528c231bc"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Total Bill Amt]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="231" y="23" width="44" height="12" uuid="fe269aa3-5163-406f-86dc-c89a17136218"/>
+=======
+				<reportElement x="231" y="23" width="44" height="12" uuid="f80d4d6d-1b7f-42d5-9708-e151ff440f24"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[At 18%]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="402" y="11" width="41" height="12" uuid="084a2539-a3fa-401c-81fc-61e31c9aa08e"/>
+=======
+				<reportElement x="402" y="11" width="41" height="12" uuid="ec6f7ac4-da46-4549-8b2c-a582153b05c8"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[CGST Amt]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="147" y="23" width="36" height="12" uuid="8049e95a-edc7-403f-b592-ad5dc9eae74c"/>
+=======
+				<reportElement x="147" y="23" width="36" height="12" uuid="6046cea0-b93b-43ee-9446-ec9476dfc281"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[ At 5%]]></text>
 			</staticText>
 			<line>
+<<<<<<< Updated upstream
 				<reportElement x="0" y="8" width="555" height="1" uuid="48f78f77-5107-4903-8358-2422629b478c"/>
 			</line>
 			<line>
@@ -322,16 +429,71 @@
 			</line>
 			<staticText>
 				<reportElement x="112" y="23" width="33" height="12" uuid="6ea4f718-e177-424d-b909-54102c9dcb94"/>
+=======
+				<reportElement x="0" y="8" width="555" height="1" uuid="9f557b24-5c2b-46f1-aed1-50c67a08d10e"/>
+			</line>
+			<line>
+				<reportElement x="0" y="35" width="555" height="1" uuid="6d5f39be-f8b7-41c8-aca3-eb9105fe527b"/>
+			</line>
+			<line>
+				<reportElement x="0" y="9" width="1" height="26" uuid="74046298-c30d-4836-9ef1-bd16155a7952"/>
+			</line>
+			<line>
+				<reportElement x="52" y="9" width="1" height="26" uuid="c455a256-60f3-41f4-9c8c-e9d3d6475d2a"/>
+			</line>
+			<line>
+				<reportElement x="113" y="9" width="1" height="26" uuid="2ab62613-8868-4770-ae18-ea15221a1a0d"/>
+			</line>
+			<line>
+				<reportElement x="183" y="23" width="1" height="12" uuid="82ffd2d2-661b-41e5-a61c-33c896791c0f"/>
+			</line>
+			<line>
+				<reportElement x="229" y="23" width="1" height="12" uuid="b0d71e7c-bc2f-4978-979b-f6c5e66fcfe3"/>
+			</line>
+			<line>
+				<reportElement x="275" y="23" width="1" height="12" uuid="91c4337d-e27e-4f9a-9708-bb113c431c4b"/>
+			</line>
+			<line>
+				<reportElement x="321" y="9" width="1" height="26" uuid="7688010e-6942-45ad-adfd-fde1c60f5453"/>
+			</line>
+			<line>
+				<reportElement x="357" y="9" width="1" height="26" uuid="1a17df60-9d4c-4730-ae37-2d666221a82e"/>
+			</line>
+			<line>
+				<reportElement x="401" y="9" width="1" height="26" uuid="744a3d19-7246-420a-b1e5-bff2d72930f3"/>
+			</line>
+			<line>
+				<reportElement x="442" y="9" width="1" height="26" uuid="08f6f824-d0bd-4c07-8590-3b1e6ccd5a9b"/>
+			</line>
+			<line>
+				<reportElement x="491" y="9" width="1" height="26" uuid="e41dc0fc-152a-49bc-9005-c45f4d26c7ed"/>
+			</line>
+			<line>
+				<reportElement x="554" y="9" width="1" height="26" uuid="d5b85941-3186-4b3d-8fc2-37755e35e1c6"/>
+			</line>
+			<line>
+				<reportElement x="146" y="23" width="1" height="12" uuid="c6c1cf87-9139-462f-9c2b-48014cd4e950"/>
+			</line>
+			<staticText>
+				<reportElement x="112" y="23" width="33" height="12" uuid="8ca10094-eeec-4acb-ba10-3d1dd12943ff"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[ At 0%]]></text>
 			</staticText>
 			<line>
+<<<<<<< Updated upstream
 				<reportElement x="114" y="22" width="207" height="1" uuid="f0054d3f-4a58-49b2-89bd-87a33c5983ed"/>
 			</line>
 			<staticText>
 				<reportElement x="113" y="11" width="207" height="12" uuid="f9675b96-1311-4ecb-898e-7a621d020886"/>
+=======
+				<reportElement x="114" y="22" width="207" height="1" uuid="97dff19d-bfb3-4d42-92e3-39e581752a83"/>
+			</line>
+			<staticText>
+				<reportElement x="113" y="11" width="207" height="12" uuid="79787218-0268-4a5e-be75-6b63aaad39ca"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
@@ -345,28 +507,44 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField>
+<<<<<<< Updated upstream
 				<reportElement x="2" y="0" width="49" height="15" uuid="59589b0e-72ca-4662-8fa3-96bc989d74fe"/>
+=======
+				<reportElement x="2" y="0" width="49" height="15" uuid="1ed0baa5-8ebe-49d3-9d11-7561d7512e58"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bill_number}]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy">
+<<<<<<< Updated upstream
 				<reportElement x="57" y="0" width="53" height="15" uuid="911f0b1d-106f-4d3a-b896-2b9dc0d452c0"/>
+=======
+				<reportElement x="57" y="0" width="53" height="15" uuid="8e7619b4-0a34-4d69-9062-7abc04857302"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_date}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
+<<<<<<< Updated upstream
 				<reportElement x="491" y="0" width="61" height="15" uuid="fc655ad9-aa87-4f4d-8d4a-237dc9b462fc"/>
+=======
+				<reportElement x="491" y="0" width="61" height="15" uuid="336e11b5-7adc-4dc9-aa67-2ada061c6bc3"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bill_amount}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="147" y="0" width="34" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="c0244815-46ef-4454-bb7c-928a2725b74b"/>
+=======
+				<reportElement mode="Transparent" x="147" y="0" width="34" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="672d7ca4-8b09-4823-b04c-7e630f1b8ecd"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -374,7 +552,11 @@
 				<textFieldExpression><![CDATA[$F{taxable_at_5}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="184" y="0" width="43" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="710b04b8-e294-490f-9fcd-15a2e2ab0880"/>
+=======
+				<reportElement mode="Transparent" x="184" y="0" width="43" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="084ac4c5-3438-427f-832b-bd866cc908c5"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -382,7 +564,11 @@
 				<textFieldExpression><![CDATA[$F{taxable_at_12}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="229" y="0" width="44" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="75f8923b-6700-4a8a-ae00-835f74a649ab"/>
+=======
+				<reportElement mode="Transparent" x="229" y="0" width="44" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="147c4ca3-1255-427e-8ad8-34cf057fcd54"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -390,7 +576,11 @@
 				<textFieldExpression><![CDATA[$F{taxable_at_18}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="274" y="0" width="45" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="d850515c-c8c3-48d3-94f7-bf9a6b47ccd1"/>
+=======
+				<reportElement mode="Transparent" x="274" y="0" width="45" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="11caf9c8-9f82-4812-b2a6-99ed40e9deea"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -398,7 +588,11 @@
 				<textFieldExpression><![CDATA[$F{taxable_at_28}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="356" y="0" width="42" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="88932011-544c-4b4f-9662-ccb50791c0f1"/>
+=======
+				<reportElement mode="Transparent" x="356" y="0" width="42" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="8a8e7e5e-9b99-4005-91bc-e4ec1e40c8e0"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -406,7 +600,11 @@
 				<textFieldExpression><![CDATA[$F{sgst}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="398" y="0" width="43" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="bfa0b30e-212c-481e-8cb3-aee79cc647f3"/>
+=======
+				<reportElement mode="Transparent" x="398" y="0" width="43" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="4066a6b9-8a17-43ed-a8b3-59751e4e0194"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -414,7 +612,11 @@
 				<textFieldExpression><![CDATA[$F{cgst}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="445" y="0" width="45" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="692844ff-b876-45c2-aa3e-ded471b82d96"/>
+=======
+				<reportElement mode="Transparent" x="445" y="0" width="45" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="fcd0142b-3766-433b-8d0b-d2bb7186726f"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -422,7 +624,11 @@
 				<textFieldExpression><![CDATA[$F{total_gst}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="323" y="0" width="31" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="77df8481-8391-4cb1-ad74-0d82ccee79a2"/>
+=======
+				<reportElement mode="Transparent" x="323" y="0" width="31" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="0d8a3469-23e3-463b-aab4-5a6f5e2ce0d6"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -430,6 +636,7 @@
 				<textFieldExpression><![CDATA[0.0]]></textFieldExpression>
 			</textField>
 			<line>
+<<<<<<< Updated upstream
 				<reportElement x="52" y="-1" width="1" height="16" uuid="8e8a3a0e-0eb4-4d53-b19d-2b0a4dea81a6"/>
 			</line>
 			<line>
@@ -470,6 +677,48 @@
 			</line>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
 				<reportElement mode="Transparent" x="114" y="0" width="30" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="989fb020-a017-489b-88dd-69a51c7ec2c3"/>
+=======
+				<reportElement x="52" y="-1" width="1" height="16" uuid="46d77d3b-c67a-4bb8-8a67-7ccfdab07328"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-1" width="1" height="16" uuid="bf6688dd-b28e-43d2-91a5-aec701efd7cc"/>
+			</line>
+			<line>
+				<reportElement x="113" y="-1" width="1" height="16" uuid="5d38a253-d71c-4ba4-945d-890134071926"/>
+			</line>
+			<line>
+				<reportElement x="275" y="-1" width="1" height="16" uuid="aa59d498-05f8-4ecd-9dcd-cb1396a8d12c"/>
+			</line>
+			<line>
+				<reportElement x="146" y="-1" width="1" height="16" uuid="bc5a86a7-27f0-4819-a120-d98dd3cbe7f0"/>
+			</line>
+			<line>
+				<reportElement x="183" y="-1" width="1" height="16" uuid="c2be1da5-58c0-4736-bcb5-aabb68f749c9"/>
+			</line>
+			<line>
+				<reportElement x="229" y="-1" width="1" height="16" uuid="9d3bcf85-53d3-48b5-a223-71a3aa8939f3"/>
+			</line>
+			<line>
+				<reportElement x="321" y="-1" width="1" height="16" uuid="092dad44-de21-4522-8977-1f4e13665a51"/>
+			</line>
+			<line>
+				<reportElement x="357" y="-1" width="1" height="16" uuid="e7c39283-40d5-4266-8357-ec5ead2adee1"/>
+			</line>
+			<line>
+				<reportElement x="401" y="-1" width="1" height="16" uuid="7ef17e3e-9aa5-4a28-adfe-d4d88ab15dbb"/>
+			</line>
+			<line>
+				<reportElement x="442" y="-1" width="1" height="16" uuid="c7f3b443-377c-4b7b-9df0-063d51ccc695"/>
+			</line>
+			<line>
+				<reportElement x="491" y="-1" width="1" height="16" uuid="a633c265-49a0-4e0e-bfa0-5fdc3118ad73"/>
+			</line>
+			<line>
+				<reportElement x="554" y="-1" width="1" height="16" uuid="be8a0fae-0ed9-46bf-8674-a99727f2c06c"/>
+			</line>
+			<textField pattern="#,##0.00" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="114" y="0" width="30" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="df7e2987-b9c0-4cfe-ac53-d072cbd17854"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -484,42 +733,69 @@
 	<pageFooter>
 		<band height="54" splitType="Stretch">
 			<line>
+<<<<<<< Updated upstream
 				<reportElement x="0" y="-2" width="555" height="1" uuid="4fd66ebf-28f2-4429-b9ae-e1bf6df1278d"/>
 			</line>
 			<textField>
 				<reportElement x="0" y="34" width="44" height="20" uuid="d9a728fe-f416-4fe2-afa4-747c5b117646"/>
+=======
+				<reportElement x="0" y="-2" width="555" height="1" uuid="297df6d8-82f4-4055-92ba-a6be947bdcf3"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="34" width="44" height="20" uuid="1ee02d71-880a-4e18-a014-6b7f4b4ee35c"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
+<<<<<<< Updated upstream
 				<reportElement x="610" y="34" width="40" height="20" uuid="0e627f90-c73b-494b-9910-825416ee0605"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
 				<reportElement x="41" y="33" width="16" height="19" uuid="29f8bbe5-dd17-4983-94f2-a90a35e1e1d1"/>
+=======
+				<reportElement x="610" y="34" width="40" height="20" uuid="79b02061-b13c-4a09-972d-58bfbdc16bdd"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="41" y="33" width="16" height="19" uuid="d8c699b9-2fcd-484b-b9fb-bd1d41a7e818"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="419" y="2" width="19" height="20" uuid="13e2990a-29b5-453a-86e6-10366915ce45"/>
+=======
+				<reportElement x="419" y="2" width="19" height="20" uuid="262728ec-4cd7-4a2d-83fe-b093b4d31345"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Monotype Corsiva"/>
 				</textElement>
 				<text><![CDATA[for]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="438" y="2" width="115" height="20" uuid="7d567500-5ab8-4d80-9457-6537a501485e"/>
+=======
+				<reportElement x="438" y="2" width="115" height="20" uuid="5f40f146-6112-43df-b3b5-dcd08c9dd34d"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font isBold="true"/>
 				</textElement>
 				<text><![CDATA[HANEEFA STORES]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="452" y="34" width="100" height="20" uuid="41ba2183-565c-416f-89bf-c43912b08d87"/>
+=======
+				<reportElement x="452" y="34" width="100" height="20" uuid="f991d4a6-5687-4171-8658-6b6eade4c852"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
 				<text><![CDATA[Authorized Signatory]]></text>
 			</staticText>
@@ -528,17 +804,28 @@
 	<summary>
 		<band height="28" splitType="Stretch">
 			<line>
+<<<<<<< Updated upstream
 				<reportElement x="0" y="0" width="555" height="1" uuid="7d7a8517-bf21-447c-a363-85d35b344d67"/>
 			</line>
 			<textField pattern="#,##0.00">
 				<reportElement x="134" y="3" width="46" height="18" uuid="bcc09df1-c73a-4828-9e13-e4634e4433fa"/>
+=======
+				<reportElement x="0" y="0" width="555" height="1" uuid="c803d5b5-dabc-461d-9dcb-8eef1e46f83d"/>
+			</line>
+			<textField pattern="#,##0.00">
+				<reportElement x="134" y="3" width="46" height="18" uuid="362a926d-7959-4ae3-aa1c-b0bea64ce0ab"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{total_gst_5}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="180" y="3" width="44" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="8501adca-3f23-4c7e-9333-02d89c6a7ec3"/>
+=======
+				<reportElement mode="Transparent" x="180" y="3" width="44" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="0484401e-3bbb-4a32-920a-10d6c754c301"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -546,7 +833,11 @@
 				<textFieldExpression><![CDATA[$V{total_gst_12}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="225" y="3" width="47" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="4f728694-f9c2-4fb0-982e-01974717f794"/>
+=======
+				<reportElement mode="Transparent" x="225" y="3" width="47" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="9f597db2-3ab2-4791-82ed-e197656d3599"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -554,7 +845,11 @@
 				<textFieldExpression><![CDATA[$V{total_gst_18}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="270" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="34f2daf0-2589-46c8-af45-6337460ebb80"/>
+=======
+				<reportElement mode="Transparent" x="270" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="1a3dcab9-511e-4457-a670-2bdb0a454262"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -562,7 +857,11 @@
 				<textFieldExpression><![CDATA[$V{total_gst_28}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="339" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="840642ac-e569-4c04-8c4d-9ae4b2ec06be"/>
+=======
+				<reportElement mode="Transparent" x="339" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="183ebb20-5f67-4d87-b603-b3709c485724"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -570,7 +869,11 @@
 				<textFieldExpression><![CDATA[$V{total_sgst}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="382" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="46084b06-0d6d-4817-bc53-9b7afad8857c"/>
+=======
+				<reportElement mode="Transparent" x="382" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="6b8e5897-4249-4a16-a4bd-4747dfa45637"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -578,7 +881,11 @@
 				<textFieldExpression><![CDATA[$V{total_cgst}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="425" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="77ad0d4b-872b-4ca8-82bd-7e3b3c54ec19"/>
+=======
+				<reportElement mode="Transparent" x="425" y="3" width="42" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="4e912ed4-863d-400d-92bf-539e38de7281"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -586,7 +893,11 @@
 				<textFieldExpression><![CDATA[$V{gst_grand_total}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="467" y="3" width="34" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="3b7df17d-dc8f-451a-b704-604f6e5b5586"/>
+=======
+				<reportElement mode="Transparent" x="467" y="3" width="34" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="1be5c692-6716-4c5f-b100-0beec70a88a0"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -594,7 +905,11 @@
 				<textFieldExpression><![CDATA[$V{total_cess}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00" isBlankWhenNull="false">
+<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="502" y="3" width="51" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="4b8b8268-79f3-45da-a784-55dd6197832f"/>
+=======
+				<reportElement mode="Transparent" x="502" y="3" width="51" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="0cb2366a-c3b1-46e5-b7a5-d5d4bc7f3757"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial Narrow" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -602,28 +917,44 @@
 				<textFieldExpression><![CDATA[$V{total_bill_amount}]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="312" y="3" width="26" height="18" uuid="8b9a9abb-9a66-47c3-b2dc-87196394cdad"/>
+=======
+				<reportElement x="312" y="3" width="26" height="18" uuid="d94f674e-7d44-48d4-90d7-22d728ec1105"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[0.0]]></text>
 			</staticText>
 			<textField>
+<<<<<<< Updated upstream
 				<reportElement x="60" y="3" width="23" height="18" uuid="e3438a06-58bf-487f-af60-08608dab6b8b"/>
+=======
+				<reportElement x="60" y="3" width="23" height="18" uuid="6cc79bac-4ed4-409f-8b67-183b2220801b"/>
+>>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="3" y="3" width="48" height="18" uuid="a29ee670-5681-481c-a700-f8574d4dd6df"/>
+=======
+				<reportElement x="3" y="3" width="48" height="18" uuid="cec25bdd-8406-43d2-9dec-531264b33afd"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Count #:]]></text>
 			</staticText>
 			<textField pattern="#,##0.00">
+<<<<<<< Updated upstream
 				<reportElement x="93" y="3" width="40" height="18" uuid="d02a4108-da14-4b2b-ae87-78fa79173562"/>
+=======
+				<reportElement x="93" y="3" width="40" height="18" uuid="5c2dd1a7-eb1d-470f-b9c4-8c6d83668888"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9" isBold="true"/>
 				</textElement>
