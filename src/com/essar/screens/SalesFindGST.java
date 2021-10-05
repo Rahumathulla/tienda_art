@@ -30,7 +30,7 @@ import javax.swing.JOptionPane;
  *
  * @author rahumathulla
  */
-public class SalesFind extends javax.swing.JFrame implements ActionListener{
+public class SalesFindGST extends javax.swing.JFrame implements ActionListener{
 
     /**
      * Creates new form Stock
@@ -42,7 +42,7 @@ public class SalesFind extends javax.swing.JFrame implements ActionListener{
     String pattern = "yyyy-MM-dd";
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
-    public SalesFind() {
+    public SalesFindGST() {
         initComponents();
         initializeForm();
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/tienda.png")));
@@ -329,9 +329,9 @@ public class SalesFind extends javax.swing.JFrame implements ActionListener{
                     + ", s.payable_amount"
                     + ", s.sales_date"
                     + ", s.status  "
-                    + " from dsales s "
+                    + " from sales s "
                     + " JOIN customer cust ON s.customer_id = cust.customer_id"
-                    + " JOIN dsales_details d ON s.sales_id = d.sales_id WHERE 1=1 ";
+                    + " JOIN sales_details d ON s.sales_id = d.sales_id WHERE 1=1 ";
         if(null!= txtBillNumber.getText() && !("".equals(txtBillNumber.getText()))) { 
             QueryStrings.viewSalesSql = selectClause + " AND bill_number ='"+txtBillNumber.getText()+"'";
             
@@ -489,14 +489,22 @@ public class SalesFind extends javax.swing.JFrame implements ActionListener{
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SalesFind.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SalesFindGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SalesFind.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SalesFindGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SalesFind.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SalesFindGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SalesFind.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SalesFindGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -509,7 +517,7 @@ public class SalesFind extends javax.swing.JFrame implements ActionListener{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SalesFind().setVisible(true);
+                new SalesFindGST().setVisible(true);
             }
         });
     }

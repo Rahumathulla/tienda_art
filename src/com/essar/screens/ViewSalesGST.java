@@ -5,7 +5,6 @@
  */
 package com.essar.screens;
 
-import com.essar.dao.EstimateDAO;
 import com.essar.dao.GstDAO;
 import com.essar.dao.SalesDAO;
 import com.essar.pojos.GST;
@@ -35,7 +34,7 @@ import javax.swing.table.TableColumn;
  *
  * @author rahumathulla
  */
-public class ViewSales extends javax.swing.JFrame implements ActionListener{
+public class ViewSalesGST extends javax.swing.JFrame implements ActionListener{
 
     /**
      * Creates new form ProductCategory
@@ -46,7 +45,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
     DecimalFormat df = new DecimalFormat("##,##,###.##");
   
     DefaultTableModel salesModel = null;
-    public ViewSales() {
+    public ViewSalesGST() {
         initComponents();
         initializeForm();
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/tienda.png")));
@@ -323,14 +322,142 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ViewSales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewSalesGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ViewSales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewSalesGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ViewSales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewSalesGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ViewSales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewSalesGST.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -463,7 +590,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ViewSales().setVisible(true);
+                new ViewSalesGST().setVisible(true);
             }
         });
     }
@@ -471,7 +598,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
 
     public void initializeForm(){
 
-        EstimateDAO salesDAO = new EstimateDAO();
+        SalesDAO salesDAO = new SalesDAO();
         renderDataIntoTable(salesDAO.retrieveSalesByQuery(QueryStrings.viewSalesSql));
         mnuTable = new JPopupMenu();
         /*mitDelete = new JMenuItem("Delete");
@@ -543,10 +670,10 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
     public void syncDataFromViewToTable(){
         Sales sales = null;
         salesId = tblSalesView.getModel().getValueAt(tblSalesView.getSelectedRow(),tblSalesView.getColumnCount()-1).toString();
-        EstimateDAO salesDAO = new EstimateDAO();
+        SalesDAO salesDAO = new SalesDAO();
         sales = salesDAO.retrieveBySalesId(Long.parseLong(salesId));
 
-        SalesWindow salesWindow = new SalesWindow();
+        SalesWindowGST salesWindow = new SalesWindowGST();
         //salesWindow.fetchSalesDataIntoTable(salesDAO.retrieveByBillNumber(salesBillNumber));
         salesWindow.repaint();
         //salesWindow.setBounds(100, 20, 980, 680);
@@ -587,7 +714,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
                 //System.out.println("--------INSIDE DELETE-"+tblCategory.getModel().getValueAt(tblCategory.getSelectedRow(),0));
                 //String billNumber = tblSalesView.getModel().getValueAt(tblSalesView.getSelectedRow(),tblSalesView.getColumnCount()-1).toString();
                 String salesId = tblSalesView.getModel().getValueAt(tblSalesView.getSelectedRow(),tblSalesView.getColumnCount()-1).toString();
-                EstimateDAO salesDAO = new EstimateDAO();
+                SalesDAO salesDAO = new SalesDAO();
                 //salesDAO.deleteSalesByBillNumber(billNumber);
                 //sales =  salesDAO.retrieveBySalesId(Long.parseLong(salesId));
                 sales =  salesDAO.retrieveBySalesId(Long.parseLong(salesId));
@@ -597,7 +724,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
                 else{
                     System.out.println("SALES ID-"+salesId);                    
                     salesDAO.updateStockAfterBillDeletion(sales, salesDetailsList, true);
-                    salesDAO = new EstimateDAO();//for re-instating the session
+                    salesDAO = new SalesDAO();//for re-instating the session
                     salesDAO.deleteSalesBySalesId(Long.parseLong(salesId));
                     GenericUtils.removeRowFromJTable(tblSalesView, salesModel);
                 }

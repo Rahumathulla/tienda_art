@@ -183,7 +183,6 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         mnuSalesDetails = new javax.swing.JPopupMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         mitDelete = new javax.swing.JMenuItem();
-        stockDAO1 = new com.essar.dao.StockDAO();
         grpSalesType = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
@@ -472,7 +471,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 153, 0));
+        jLabel2.setForeground(new java.awt.Color(0, 153, 255));
         jLabel2.setText("Bill Number:");
 
         lblUnitPrice1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -542,7 +541,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
 
         lblSalesDate.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        lblSalesDate.setForeground(new java.awt.Color(102, 153, 0));
+        lblSalesDate.setForeground(new java.awt.Color(0, 153, 255));
         lblSalesDate.setText("Sales Date");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Payment Type"));
@@ -1381,7 +1380,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         + " LEFT JOIN customer cust ON s.customer_id = cust.customer_id"
         + " LEFT JOIN sales_details d ON s.sales_id = d.sales_id "
         + " group by sales_id order by sales_id DESC";
-        ViewSales salesView =  new ViewSales();
+        ViewSalesGST salesView =  new ViewSalesGST();
         //salesView.setSize(800, 520);
         salesView.setVisible(true);
     }//GEN-LAST:event_btnViewAllActionPerformed
@@ -1434,7 +1433,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 System.out.println("Invalid Bill Number");
             }*/
 
-            SalesFind salesFind = new SalesFind();
+            SalesFindGST salesFind = new SalesFindGST();
             salesFind.setBounds(60, 60, 630, 360);
             salesFind.setVisible(true);
     }//GEN-LAST:event_btnSearchActionPerformed
@@ -3129,7 +3128,6 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
     private javax.swing.JRadioButton radCash;
     private javax.swing.JRadioButton radCredit;
     private javax.swing.JScrollPane spnSalesItems;
-    private com.essar.dao.StockDAO stockDAO1;
     private javax.swing.JTable tblSalesDetails;
     private javax.swing.JTextField txtAmountPayable;
     private javax.swing.JTextField txtBalanceAmount;

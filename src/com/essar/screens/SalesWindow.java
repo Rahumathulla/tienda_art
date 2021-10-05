@@ -6,6 +6,7 @@
 package com.essar.screens;
 
 import com.essar.dao.CustomerDAO;
+import com.essar.dao.EstimateDAO;
 import com.essar.dao.PricingTierDAO;
 import com.essar.dao.SalesDAO;
 import com.essar.dao.StockDAO;
@@ -183,7 +184,6 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         mnuSalesDetails = new javax.swing.JPopupMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         mitDelete = new javax.swing.JMenuItem();
-        stockDAO1 = new com.essar.dao.StockDAO();
         grpSalesType = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
@@ -1377,9 +1377,9 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         + ", s.payable_amount"
         + ", s.sales_date"
         + ", s.status  "
-        + " from sales s "
+        + " from dsales s "
         + " LEFT JOIN customer cust ON s.customer_id = cust.customer_id"
-        + " LEFT JOIN sales_details d ON s.sales_id = d.sales_id "
+        + " LEFT JOIN dsales_details d ON s.sales_id = d.sales_id "
         + " group by sales_id order by sales_id DESC";
         ViewSales salesView =  new ViewSales();
         //salesView.setSize(800, 520);
@@ -1391,7 +1391,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         try{
             if(currentId+1 <= maxId){
                 currentId = currentId +1;
-                SalesDAO salesDAO = new SalesDAO();
+                EstimateDAO salesDAO = new EstimateDAO();
                 fetchSalesDataIntoTable(salesDAO.retrieveBySalesId(currentId));
             }else{
                 JOptionPane.showMessageDialog(null, "No more record after.");
@@ -1407,7 +1407,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
 
             if(currentId-1 >= minId){
                 currentId = currentId -1;
-                SalesDAO salesDAO = new SalesDAO();
+                EstimateDAO salesDAO = new EstimateDAO();
                 fetchSalesDataIntoTable(salesDAO.retrieveBySalesId(currentId));
             }else{
                 JOptionPane.showMessageDialog(null, "No more record before.");
@@ -1427,7 +1427,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                 if(null == billNumber || "".equalsIgnoreCase(billNumber.trim())){
                     JOptionPane.showMessageDialog(this, "No Data found!");
                 }else{
-                    SalesDAO salesDAO = new SalesDAO();
+                    EstimateDAO salesDAO = new EstimateDAO();
                     fetchSalesDataIntoTable(salesDAO.retrieveByBillNumber(billNumber));
                 }
             }catch(Exception e){
@@ -1560,7 +1560,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
 
         }else if(btnSave.getText().equalsIgnoreCase("save")){
             //Implement Save Logic
-            SalesDAO salesDAO = new SalesDAO();
+            EstimateDAO salesDAO = new EstimateDAO();
             if(validateSalesDetails()){
                 if(salesDAO.doesSalesBillExist(txtBillNumber.getText())){
                     JOptionPane.showMessageDialog(this, "The bill number already exists. Please try saving with next bill number.");
@@ -1785,8 +1785,9 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         // TODO add your handling code here:
         if(evt.getClickCount() > 1){
             this.dispose();
-            SalesWindow salesWindow = new SalesWindow();
+            SalesWindowGST salesWindow = new SalesWindowGST();
             salesWindow.setBounds(40, 40, 980, 680);
+            salesWindow.setExtendedState(6);
             salesWindow.setVisible(true);
         }
     }//GEN-LAST:event_lblCustomerTypeMouseClicked
@@ -3001,7 +3002,6 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
     private javax.swing.JRadioButton radCash;
     private javax.swing.JRadioButton radCredit;
     private javax.swing.JScrollPane spnSalesItems;
-    private com.essar.dao.StockDAO stockDAO1;
     private javax.swing.JTable tblSalesDetails;
     private javax.swing.JTextField txtAmountPayable;
     private javax.swing.JTextField txtBalanceAmount;

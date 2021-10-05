@@ -61,8 +61,6 @@
         <Property name="text" type="java.lang.String" value="jMenuItem1"/>
       </Properties>
     </Component>
-    <Component class="com.essar.dao.StockDAO" name="stockDAO1">
-    </Component>
     <Component class="javax.swing.ButtonGroup" name="grpSalesType">
     </Component>
     <Component class="javax.swing.ButtonGroup" name="buttonGroup2">

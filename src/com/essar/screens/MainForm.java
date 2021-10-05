@@ -583,7 +583,7 @@ public class MainForm extends javax.swing.JFrame {
 
     private void cmdSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdSalesActionPerformed
         // TODO add your handling code here:
-        DummySales salesWindow = new DummySales();
+        SalesWindow salesWindow = new SalesWindow();
         //salesWindow.setBounds(40, 40, 980, 680);
         salesWindow.setExtendedState(6);
         salesWindow.setVisible(true);
