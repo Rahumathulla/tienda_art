@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
 	<property name="ireport.zoom" value="1.3310000000000006"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
-=======
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6ef085f-611f-42ec-92f8-2abceb69b1b8">
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
-	<property name="ireport.zoom" value="1.3310000000000006"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="181"/>
->>>>>>> Stashed changes
 	<import value="java.util.Date"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
@@ -39,15 +28,7 @@
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-<<<<<<< Updated upstream
 	<subDataset name="Table Dataset 1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-	<subDataset name="Table Dataset 1" />
-=======
-	<subDataset name="Table Dataset 1" uuid="90019c96-03cf-456b-9aa1-a96bdefd29fe"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 	<parameter name="bill_no" class="java.lang.String">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -167,10 +148,6 @@ WHERE
 		<groupFooter>
 			<band height="79">
 				<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 					<reportElement x="0" y="0" width="555" height="1" forecolor="#666666" />
 				</line>
 				<line>
@@ -181,509 +158,233 @@ WHERE
 				</line>
 				<staticText>
 					<reportElement style="Column header" x="2" y="51" width="37" height="13" forecolor="#000000" />
-<<<<<<< Updated upstream
-=======
-=======
-					<reportElement x="0" y="0" width="555" height="1" forecolor="#666666" uuid="78f31cfd-d27d-4f9b-b2f3-9b3078a35e2b"/>
-				</line>
-				<line>
-					<reportElement x="554" y="0" width="1" height="64" forecolor="#666666" uuid="927ed1c8-c596-49f4-8b4d-0433c69569fa"/>
-				</line>
-				<line>
-					<reportElement x="-1" y="64" width="556" height="1" forecolor="#666666" uuid="d8503be7-eccc-4df5-95fc-5d6ac46a1fbe"/>
-				</line>
-				<staticText>
-					<reportElement style="Column header" x="2" y="51" width="37" height="13" forecolor="#000000" uuid="df4a6c94-bdf3-4d3a-88a4-a9b7d2dbb017"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[SGST]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="2" y="36" width="37" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="2" y="36" width="37" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="2" y="36" width="37" height="14" forecolor="#000000" uuid="5a6dabe0-cd47-4226-9dcf-12c4a51f05b4"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[CGST]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="2" y="21" width="48" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="2" y="21" width="48" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="2" y="21" width="48" height="14" forecolor="#000000" uuid="f6a85df6-0671-4723-afd9-1313842d98f6"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[Taxable Amt]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="67" y="5" width="26" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="67" y="5" width="26" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="67" y="5" width="26" height="14" forecolor="#000000" uuid="b13ec442-b791-4cd9-947a-74a729dc8555"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[0%]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="155" y="5" width="34" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="155" y="5" width="34" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="155" y="5" width="34" height="14" forecolor="#000000" uuid="dae4ab22-7e52-4479-87d4-824f51c0b8b7"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[12%]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="202" y="5" width="38" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="202" y="5" width="38" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="202" y="5" width="38" height="14" forecolor="#000000" uuid="a9922849-d9a4-426a-a555-7c96a563ba46"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[18%]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="108" y="5" width="35" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="108" y="5" width="35" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="108" y="5" width="35" height="14" forecolor="#000000" uuid="20f137c6-a0c5-4c68-89c0-17c9b029575f"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[5%]]></text>
 				</staticText>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="154" y="36" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="154" y="36" width="35" height="14" />
-=======
-					<reportElement style="Detail" x="154" y="36" width="35" height="14" uuid="2e3f84fc-c329-44d5-8742-2abdc351663f"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_12}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="155" y="51" width="34" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="155" y="51" width="34" height="14" />
-=======
-					<reportElement style="Detail" x="155" y="51" width="34" height="14" uuid="ef26a1e5-fc28-4d47-8a5e-19d8294f9d56"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_12}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="202" y="36" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="202" y="36" width="38" height="14" />
-=======
-					<reportElement style="Detail" x="202" y="36" width="38" height="14" uuid="557bb8ed-67e4-4258-a12d-a12f443d9ec3"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_18}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="202" y="51" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="202" y="51" width="38" height="14" />
-=======
-					<reportElement style="Detail" x="202" y="51" width="38" height="14" uuid="0ebd9e2e-786b-4032-8bb0-761df9183d5d"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_18}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="108" y="36" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="108" y="36" width="35" height="14" />
-=======
-					<reportElement style="Detail" x="108" y="36" width="35" height="14" uuid="14bd0b7e-30be-471b-93cf-91d66ba88e0e"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_5}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="108" y="51" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="108" y="51" width="35" height="14" />
-=======
-					<reportElement style="Detail" x="108" y="51" width="35" height="14" uuid="0ee9c3ce-2cc9-4eb7-92b0-069f4e1b4e72"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_5}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement x="155" y="21" width="34" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="155" y="21" width="34" height="14" />
-=======
-					<reportElement x="155" y="21" width="34" height="14" uuid="d1ceff99-2098-4d75-866a-53cf46b47b90"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_taxable_at_12}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement x="108" y="21" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="108" y="21" width="35" height="14" />
-=======
-					<reportElement x="108" y="21" width="35" height="14" uuid="fcbc815d-018c-4d83-90b3-172fefda2d56"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_taxable_at_5}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement x="202" y="21" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="202" y="21" width="38" height="14" />
-=======
-					<reportElement x="202" y="21" width="38" height="14" uuid="c40098a4-d4d3-49d4-922d-3626e431171c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_taxable_at_18}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="462" y="42" width="74" height="20" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="462" y="42" width="74" height="20" />
-=======
-					<reportElement style="Detail" x="462" y="42" width="74" height="20" uuid="4edc6053-1d9e-46cc-90e6-e8ca6747de05"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="12" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{total_with_prev_balance}]]></textFieldExpression>
 				</textField>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement x="532" y="42" width="21" height="20" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="532" y="42" width="21" height="20" />
-=======
-					<reportElement x="532" y="42" width="21" height="20" uuid="c79739b9-c7f1-4e33-9754-22dbb8691b55"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[.00]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="252" y="5" width="38" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="252" y="5" width="38" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="252" y="5" width="38" height="14" forecolor="#000000" uuid="015c5e30-d03f-45c0-a691-ef737d02b8b2"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[28%]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="376" y="42" width="76" height="20" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="376" y="42" width="76" height="20" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="376" y="42" width="76" height="20" forecolor="#000000" uuid="c477003c-77a6-453e-af2d-13ca16410b28"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="12"/>
 					</textElement>
 					<text><![CDATA[Grand Total]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="436" y="14" width="52" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="436" y="14" width="52" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="436" y="14" width="52" height="14" forecolor="#000000" uuid="8bc40a61-d4a3-43e4-9c4f-6067e6129e8e"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[Round Off :]]></text>
 				</staticText>
 				<textField pattern="###0.00;-###0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="489" y="14" width="63" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="489" y="14" width="63" height="14" />
-=======
-					<reportElement style="Detail" x="489" y="14" width="63" height="14" uuid="6ed13150-d420-4e39-9c5c-2347ce0894eb"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_round_off}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement x="57" y="21" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="57" y="21" width="35" height="14" />
-=======
-					<reportElement x="57" y="21" width="35" height="14" uuid="4e717b24-6a42-4cf0-98dd-80bb7c1bd60c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_taxable_at_0}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="252" y="36" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="252" y="36" width="38" height="14" />
-=======
-					<reportElement style="Detail" x="252" y="36" width="38" height="14" uuid="480c1d7f-6d1c-49fa-84f5-01a300b8570e"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_28}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="252" y="51" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="252" y="51" width="38" height="14" />
-=======
-					<reportElement style="Detail" x="252" y="51" width="38" height="14" uuid="911b2462-2381-47e0-a410-27759dd9b44a"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{split_gst_28}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement x="252" y="21" width="38" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="252" y="21" width="38" height="14" />
-=======
-					<reportElement x="252" y="21" width="38" height="14" uuid="805bd995-69ea-4c26-b6ba-7b72b33a157f"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_taxable_at_28}]]></textFieldExpression>
 				</textField>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement x="57" y="36" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="57" y="36" width="35" height="14" />
-=======
-					<reportElement x="57" y="36" width="35" height="14" uuid="2b50c766-26fe-492d-98bd-4f9df14a2b1d"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font size="9"/>
 					</textElement>
 					<text><![CDATA[-]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement x="57" y="51" width="35" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="57" y="51" width="35" height="14" />
-=======
-					<reportElement x="57" y="51" width="35" height="14" uuid="1a2127dc-33d9-4691-890b-3491fb5ecdca"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font size="9"/>
 					</textElement>
 					<text><![CDATA[-]]></text>
 				</staticText>
 				<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 					<reportElement x="-1" y="0" width="1" height="64" isPrintWhenDetailOverflows="true" forecolor="#666666" />
 				</line>
 				<staticText>
 					<reportElement style="Column header" x="2" y="5" width="65" height="14" forecolor="#000000" />
-<<<<<<< Updated upstream
-=======
-=======
-					<reportElement x="-1" y="0" width="1" height="64" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="e33f3041-cd2c-4f70-ac39-8c5bbf09021a"/>
-				</line>
-				<staticText>
-					<reportElement style="Column header" x="2" y="5" width="65" height="14" forecolor="#000000" uuid="2a1feb4a-16f0-46f7-9630-d8e4b27f1bb4"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9" isUnderline="true"/>
 					</textElement>
 					<text><![CDATA[GST Details: ]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="264" y="66" width="75" height="13" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="264" y="66" width="75" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="264" y="66" width="75" height="13" forecolor="#000000" uuid="837d23ef-f2d9-4da2-8b4b-a2909d691482"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Center">
 						<font fontName="Arial Narrow" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[E.& O.E.]]></text>
 				</staticText>
 				<textField pattern="#,##0.00;-#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="489" y="28" width="63" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="489" y="28" width="63" height="14" />
-=======
-					<reportElement style="Detail" x="489" y="28" width="63" height="14" uuid="7e0b96ce-157c-48f6-a556-c1c0528c9b0a"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_previous_balance}]]></textFieldExpression>
 				</textField>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="436" y="28" width="52" height="14" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="436" y="28" width="52" height="14" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="436" y="28" width="52" height="14" forecolor="#000000" uuid="08bf1322-2fb9-4e27-98bd-e9f4d8000f7c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[Old Balance :]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="436" y="1" width="52" height="14" forecolor="#000000" >
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="436" y="1" width="52" height="14" forecolor="#000000" >
-=======
-					<reportElement style="Column header" x="436" y="1" width="52" height="14" forecolor="#000000" uuid="3cf50571-5e24-4e7d-bad8-7f9f4cf097a4">
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 						<printWhenExpression><![CDATA[$F{sales_cess} >0]]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
@@ -692,15 +393,7 @@ WHERE
 					<text><![CDATA[Cess Amount :]]></text>
 				</staticText>
 				<textField pattern="###0.00;-###0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="489" y="1" width="63" height="14" >
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="489" y="1" width="63" height="14" >
-=======
-					<reportElement style="Detail" x="489" y="1" width="63" height="14" uuid="1b440e48-36e0-4458-bf06-6a9429b820b9">
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 						<printWhenExpression><![CDATA[$F{sales_cess}>0]]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
@@ -711,115 +404,56 @@ WHERE
 			</band>
 			<band height="76">
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="2" y="43" width="67" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="2" y="43" width="67" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="2" y="43" width="67" height="15" forecolor="#000000" uuid="436479ca-26ff-4c21-b266-0c22667a631c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9" isItalic="true" isUnderline="true"/>
 					</textElement>
 					<text><![CDATA[Declaration]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement x="412" y="5" width="33" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="412" y="5" width="33" height="14" />
-=======
-					<reportElement x="412" y="5" width="33" height="14" uuid="c875fa22-7ae8-44ea-b4c2-1fa00d722c3b"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Top">
 						<font fontName="Monotype Corsiva" size="9" isItalic="true" isStrikeThrough="false"/>
 					</textElement>
 					<text><![CDATA[for]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="445" y="5" width="108" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="445" y="5" width="108" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="445" y="5" width="108" height="15" forecolor="#000000" uuid="b0525f83-7de9-467e-8414-bab7fa2f2845"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right">
 						<font size="9" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[AR Traders]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="2" y="50" width="288" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="2" y="50" width="288" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="2" y="50" width="288" height="15" forecolor="#000000" uuid="25b9e7b1-8ece-4e0a-a847-825594e81476"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="9" isBold="false" isItalic="true" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[We declare that this invoice shows the actual price of the ]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="2" y="61" width="277" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="2" y="61" width="277" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="2" y="61" width="277" height="15" forecolor="#000000" uuid="7e582dfd-db12-44f1-ace7-b7b102968f63"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="9" isBold="false" isItalic="true" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[goods described and that all particulars are true and correct.]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement x="438" y="59" width="116" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="438" y="59" width="116" height="14" />
-=======
-					<reportElement x="438" y="59" width="116" height="14" uuid="5f9fe4c8-8268-47a0-abda-8227b3f2deac"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font size="9" isItalic="true" isStrikeThrough="false"/>
 					</textElement>
 					<text><![CDATA[Authorized Signatory]]></text>
 				</staticText>
-<<<<<<< Updated upstream
 				<staticText>
 					<reportElement style="Column header" x="1" y="26" width="92" height="13" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-=======
-				<staticText>
-					<reportElement style="Column header" x="1" y="26" width="92" height="13" forecolor="#000000" uuid="e38a6ed0-f6d6-4a60-bfbf-0ad4c08151fd"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[IFSC Code : ]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="1" y="-14" width="202" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="1" y="-14" width="202" height="15" forecolor="#000000" uuid="618b6d31-96fc-4879-b57e-4c4f76cfbe69"/>
->>>>>>> Stashed changes
 					<box>
 						<pen lineColor="#000000"/>
 						<topPen lineColor="#000000"/>
@@ -833,64 +467,40 @@ WHERE
 					<text><![CDATA[Our Bank Details :]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="1" y="-1" width="92" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="1" y="-1" width="92" height="13" forecolor="#000000" uuid="59db9d7d-6217-430f-a46c-5709a0cbcf0a"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[Account Name: ]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="1" y="13" width="92" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="1" y="13" width="92" height="13" forecolor="#000000" uuid="394bd2d7-5947-4acd-b4c0-339cfb4329bf"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[Account No:   ]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="97" y="-1" width="92" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="97" y="-1" width="92" height="13" forecolor="#000000" uuid="a1f34af7-6533-4ee6-9503-0da7867143c6"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[AR TRADERS]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="97" y="13" width="92" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="97" y="13" width="92" height="13" forecolor="#000000" uuid="3e939d6e-03da-4725-871e-c8dc6aa39404"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[12121321342423]]></text>
 				</staticText>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="97" y="27" width="92" height="13" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="97" y="27" width="92" height="13" forecolor="#000000" uuid="208367d5-3665-4a7d-b7df-5b6024b4e490"/>
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[IFSC]]></text>
 				</staticText>
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 			</band>
 		</groupFooter>
 	</group>
@@ -903,10 +513,6 @@ WHERE
 			<band height="50">
 				<printWhenExpression><![CDATA[$P{REPORT_MAX_COUNT}<15]]></printWhenExpression>
 				<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 					<reportElement x="20" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
 				</line>
 				<line>
@@ -932,64 +538,18 @@ WHERE
 				</line>
 				<line>
 					<reportElement x="488" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-<<<<<<< Updated upstream
-=======
-=======
-					<reportElement x="20" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="ded345bd-d3c0-4522-8cd7-5e803b5a5d1f"/>
-				</line>
-				<line>
-					<reportElement x="80" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="9c2dab13-fe6b-4c80-b4b4-1a94088716e8"/>
-				</line>
-				<line>
-					<reportElement x="327" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="64dfd99e-e0fc-4a2c-8e4b-09e334c4a61a"/>
-				</line>
-				<line>
-					<reportElement x="355" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="1514036c-47d0-475f-ae98-f52a7ea795af"/>
-				</line>
-				<line>
-					<reportElement x="387" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="0df00184-c78b-4e4c-977a-9c0ca883ae36"/>
-				</line>
-				<line>
-					<reportElement x="434" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="969b081f-f80a-452e-a625-6487b62fc1dd"/>
-				</line>
-				<line>
-					<reportElement x="554" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="6e246274-a903-455e-a753-5d2b73d4291b"/>
-				</line>
-				<line>
-					<reportElement x="-1" y="-1" width="1" height="51" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="43c7e93c-68b3-46e1-bfee-ff10dea21990"/>
-				</line>
-				<line>
-					<reportElement x="488" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" uuid="d54b88bb-f290-43e5-aeb8-330a254c959c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				</line>
 			</band>
 			<band height="19">
 				<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="483" y="2" width="67" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="483" y="2" width="67" height="14" />
-=======
-					<reportElement style="Detail" x="483" y="2" width="67" height="14" uuid="2be6912e-62ad-436e-bf8a-b4490b169965"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Top">
 						<font fontName="Arial Narrow" size="10" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{total_net}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00" isBlankWhenNull="false">
-<<<<<<< Updated upstream
 					<reportElement style="Detail" mode="Transparent" x="347" y="4" width="40" height="15" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" mode="Transparent" x="347" y="4" width="40" height="15" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-					<reportElement style="Detail" mode="Transparent" x="347" y="4" width="40" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="efb4fedd-5765-481b-9c78-37d33b7067c5"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 						<font fontName="Arial Narrow" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 						<paragraph lineSpacing="Single"/>
@@ -997,45 +557,21 @@ WHERE
 					<textFieldExpression><![CDATA[$V{total_quantity}]]></textFieldExpression>
 				</textField>
 				<textField>
-<<<<<<< Updated upstream
 					<reportElement style="Detail" x="69" y="2" width="286" height="15" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Detail" x="69" y="2" width="286" height="15" />
-=======
-					<reportElement style="Detail" x="69" y="2" width="286" height="15" uuid="c41ea56c-056e-4248-857e-defa6f3abc0e"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="10"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{amount_in_words}]]></textFieldExpression>
 				</textField>
 				<staticText>
-<<<<<<< Updated upstream
 					<reportElement style="Column header" x="1" y="2" width="65" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement style="Column header" x="1" y="2" width="65" height="15" forecolor="#000000" />
-=======
-					<reportElement style="Column header" x="1" y="2" width="65" height="15" forecolor="#000000" uuid="63524367-46f3-43b5-9f7e-470f0e040c74"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<textElement>
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[Amount in words: ]]></text>
 				</staticText>
 				<line>
-<<<<<<< Updated upstream
 					<reportElement x="0" y="0" width="555" height="1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-					<reportElement x="0" y="0" width="555" height="1" />
-=======
-					<reportElement x="0" y="0" width="555" height="1" uuid="6e5a3d40-5de0-4fe3-b787-1b7e98da1328"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<graphicElement>
 						<pen lineColor="#666666"/>
 					</graphicElement>
@@ -1049,105 +585,49 @@ WHERE
 	<title>
 		<band height="215" splitType="Stretch">
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement x="134" y="64" width="283" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="134" y="64" width="283" height="13" />
-=======
-				<reportElement x="134" y="64" width="283" height="13" uuid="9c4c0a58-6cd8-418c-8742-09cbc6e55732"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement x="195" y="115" width="159" height="18" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="195" y="115" width="159" height="18" />
-=======
-				<reportElement x="195" y="115" width="159" height="18" uuid="dd8e5258-be16-4588-8d59-f8cb8a85b390"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="12" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[TAX INVOICE]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="1" y="118" width="65" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="1" y="118" width="65" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="1" y="118" width="65" height="15" forecolor="#000000" uuid="49b2024f-dfff-429e-b30a-0f27d3dbcb22"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement>
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Invoice No :]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="430" y="118" width="70" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="430" y="118" width="70" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="430" y="118" width="70" height="15" forecolor="#000000" uuid="9de88372-21df-4af0-8b5f-37caf69e33bb"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Invoice Date :]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy">
-<<<<<<< Updated upstream
 				<reportElement x="500" y="118" width="54" height="15" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="500" y="118" width="54" height="15" />
-=======
-				<reportElement x="500" y="118" width="54" height="15" uuid="fe5e157c-29eb-4bd4-a6c4-a4b352fcc296"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="3" y="152" width="89" height="12" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="3" y="152" width="89" height="12" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="3" y="152" width="89" height="12" forecolor="#000000" uuid="e3bcf98f-cf7e-41ec-9da4-8ef109239929"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement>
 					<font size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Customer Details :]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="false">
-<<<<<<< Updated upstream
 				<reportElement style="SubTitle" mode="Transparent" x="3" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="SubTitle" mode="Transparent" x="3" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement style="SubTitle" mode="Transparent" x="3" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" uuid="c5edf65e-dccb-48a9-9811-bcb9a3106090"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -1155,30 +635,14 @@ WHERE
 				<textFieldExpression><![CDATA[$F{sales_customer_name}]]></textFieldExpression>
 			</textField>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement x="443" y="16" width="108" height="19" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="443" y="16" width="108" height="19" forecolor="#000000" />
-=======
-				<reportElement x="443" y="16" width="108" height="19" forecolor="#000000" uuid="3292acc1-aa1a-41d0-acd9-921366d06169"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial" size="9"/>
 				</textElement>
 				<text><![CDATA[Original for Recipient]]></text>
 			</staticText>
 			<textField pattern="###0" isBlankWhenNull="false">
-<<<<<<< Updated upstream
 				<reportElement style="SubTitle" mode="Transparent" x="66" y="118" width="59" height="15" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="SubTitle" mode="Transparent" x="66" y="118" width="59" height="15" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement style="SubTitle" mode="Transparent" x="66" y="118" width="59" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="31aa78a9-5682-498d-9927-53c54ebc9f11"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -1186,15 +650,7 @@ WHERE
 				<textFieldExpression><![CDATA[$F{sales_bill_number}]]></textFieldExpression>
 			</textField>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="443" y="27" width="108" height="12" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement mode="Transparent" x="443" y="27" width="108" height="12" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement mode="Transparent" x="443" y="27" width="108" height="12" forecolor="#000000" backcolor="#FFFFFF" uuid="e28a676d-03d0-4f3a-a437-337d4fb9a8f1"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -1202,15 +658,7 @@ WHERE
 				<text><![CDATA[Duplicate for Transporter]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="443" y="40" width="108" height="13" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement mode="Transparent" x="443" y="40" width="108" height="13" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement mode="Transparent" x="443" y="40" width="108" height="13" forecolor="#000000" backcolor="#FFFFFF" uuid="bb9174ea-d030-41b3-9541-d59439dc616a"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -1218,38 +666,18 @@ WHERE
 				<text><![CDATA[Triplicate for Supplier]]></text>
 			</staticText>
 			<line>
-<<<<<<< Updated upstream
 				<reportElement x="0" y="149" width="556" height="1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="0" y="149" width="556" height="1" />
-=======
-				<reportElement x="0" y="149" width="556" height="1" uuid="1eb64e78-d7d8-4718-87a3-6f64fe8f91aa"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<graphicElement>
 					<pen lineWidth="1.0" lineStyle="Dotted" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="240" y="133" width="70" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="240" y="133" width="70" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="240" y="133" width="70" height="15" forecolor="#000000" uuid="1d0a5160-214c-4bff-8b04-5abcdef6dfc0"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[CASH BILL]]></text>
 			</staticText>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 			<staticText>
 				<reportElement x="134" y="51" width="283" height="14" />
 				<textElement textAlignment="Center">
@@ -1266,88 +694,33 @@ WHERE
 			</staticText>
 			<staticText>
 				<reportElement x="134" y="38" width="283" height="14" />
-<<<<<<< Updated upstream
-=======
-=======
-			<staticText>
-				<reportElement x="134" y="51" width="283" height="14" uuid="743a44a4-36ce-45d4-98dc-ebfc9d1efd24"/>
-				<textElement textAlignment="Center">
-					<font size="10" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="134" y="76" width="283" height="14" uuid="815514a9-143e-42fd-8655-724ce9e412a2"/>
-				<textElement textAlignment="Center">
-					<font size="10" isBold="true"/>
-				</textElement>
-				<text><![CDATA[email:artradersvpm@gmail.com]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="134" y="38" width="283" height="14" uuid="a158c5e0-b668-4d7b-b2cb-7b9bfeb3428d"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement x="134" y="2" width="283" height="36" />
 				<textElement textAlignment="Center">
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="134" y="2" width="283" height="36" />
-				<textElement textAlignment="Center">
-=======
-				<reportElement x="166" y="-6" width="274" height="36" uuid="32b84ff5-8f9f-4c9a-9fe4-620509bd6872"/>
-				<textElement>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<font fontName="SansSerif" size="28" isBold="true"/>
 				</textElement>
 				<text><![CDATA[A.R. TRADERS]]></text>
 			</staticText>
 			<line>
-<<<<<<< Updated upstream
 				<reportElement x="126" y="37" width="316" height="1" forecolor="#666666" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="126" y="37" width="316" height="1" forecolor="#666666" />
-=======
-				<reportElement x="126" y="37" width="316" height="1" forecolor="#666666" uuid="38948a5d-c754-4aab-a2ae-791f067456c1"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<graphicElement>
 					<pen lineWidth="0.75" lineStyle="Dotted"/>
 				</graphicElement>
 			</line>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="1" y="89" width="65" height="29" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="1" y="89" width="65" height="29" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="1" y="89" width="65" height="29" forecolor="#000000" uuid="d7d52a5c-61a5-412d-a7c8-d7e237727a48"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement verticalAlignment="Bottom">
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="198" y="152" width="89" height="12" forecolor="#000000" >
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="198" y="152" width="89" height="12" forecolor="#000000" >
-=======
-				<reportElement style="Column header" x="198" y="152" width="89" height="12" forecolor="#000000" uuid="f11b6ca3-1e82-4bd6-aeb6-bc53564c4e88">
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<printWhenExpression><![CDATA[$F{sales_shipping_address}!=null && $F{sales_shipping_address}!=""]]></printWhenExpression>
 				</reportElement>
 				<textElement>
@@ -1356,15 +729,7 @@ WHERE
 				<text><![CDATA[Shipping Address:]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-<<<<<<< Updated upstream
 				<reportElement style="SubTitle" mode="Transparent" x="198" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="SubTitle" mode="Transparent" x="198" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement style="SubTitle" mode="Transparent" x="198" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" uuid="9473be22-8914-43fd-bf03-ad2b2f1f085d"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -1372,15 +737,7 @@ WHERE
 				<textFieldExpression><![CDATA[$F{sales_shipping_address}]]></textFieldExpression>
 			</textField>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="395" y="164" width="89" height="13" forecolor="#000000" >
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="395" y="164" width="89" height="13" forecolor="#000000" >
-=======
-				<reportElement style="Column header" x="395" y="164" width="89" height="13" forecolor="#000000" uuid="cb346f3a-a874-4a5b-b892-f10fa06a77cb">
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 					<printWhenExpression><![CDATA[$F{sales_vehicle_details}!=null && $F{sales_vehicle_details}!=""]]></printWhenExpression>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -1389,15 +746,7 @@ WHERE
 				<text><![CDATA[Vehicle Details : ]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-<<<<<<< Updated upstream
 				<reportElement style="SubTitle" mode="Transparent" x="484" y="164" width="70" height="13" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="SubTitle" mode="Transparent" x="484" y="164" width="70" height="13" forecolor="#000000" backcolor="#FFFFFF" />
-=======
-				<reportElement style="SubTitle" mode="Transparent" x="484" y="164" width="70" height="13" forecolor="#000000" backcolor="#FFFFFF" uuid="258c3779-7622-4d6a-87b2-c5cfd2997518"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -1413,38 +762,18 @@ WHERE
 		<band height="19" splitType="Stretch">
 			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
 			<line>
-<<<<<<< Updated upstream
 				<reportElement positionType="FixRelativeToBottom" x="0" y="2" width="555" height="1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement positionType="FixRelativeToBottom" x="0" y="2" width="555" height="1" />
-=======
-				<reportElement positionType="FixRelativeToBottom" x="0" y="2" width="555" height="1" uuid="c8e43b30-4cdb-4254-aff3-3c96c7216026"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<line>
-<<<<<<< Updated upstream
 				<reportElement positionType="FixRelativeToBottom" x="0" y="18" width="555" height="1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement positionType="FixRelativeToBottom" x="0" y="18" width="555" height="1" />
-=======
-				<reportElement positionType="FixRelativeToBottom" x="0" y="18" width="555" height="1" uuid="a2f0628c-55df-48e2-8c04-f6fa5a2c0103"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 				<reportElement x="20" y="3" width="1" height="16" forecolor="#666666" />
 			</line>
 			<line>
@@ -1464,145 +793,61 @@ WHERE
 			</line>
 			<staticText>
 				<reportElement style="Column header" x="24" y="4" width="55" height="15" forecolor="#000000" />
-<<<<<<< Updated upstream
-=======
-=======
-				<reportElement x="20" y="3" width="1" height="16" forecolor="#666666" uuid="17733471-ffb0-4525-90ee-9d70cd6c99f9"/>
-			</line>
-			<line>
-				<reportElement x="80" y="3" width="1" height="16" forecolor="#666666" uuid="a9e4fa82-2214-411a-bcd5-950ee539859e"/>
-			</line>
-			<line>
-				<reportElement x="327" y="3" width="1" height="16" forecolor="#666666" uuid="e4c1eb49-c4a2-4ca2-9704-15b0d914fc42"/>
-			</line>
-			<line>
-				<reportElement x="355" y="3" width="1" height="16" forecolor="#666666" uuid="0440e548-0711-463a-b94e-21cfe0c277f7"/>
-			</line>
-			<line>
-				<reportElement x="387" y="3" width="1" height="16" forecolor="#666666" uuid="461f78de-42b4-4b27-8287-9b40b56b2e66"/>
-			</line>
-			<line>
-				<reportElement x="488" y="3" width="1" height="16" forecolor="#666666" uuid="4b88ca72-fc86-437b-8ee0-d12b7d10e1a0"/>
-			</line>
-			<staticText>
-				<reportElement style="Column header" x="24" y="4" width="55" height="15" forecolor="#000000" uuid="c7f71986-f078-4fac-aa65-43f4128aa0d5"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[HSN/SAC]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="85" y="4" width="155" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="85" y="4" width="155" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="85" y="4" width="155" height="15" forecolor="#000000" uuid="d389665c-fe1f-46a1-8998-5ab9d20fc26d"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Item Name]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="440" y="4" width="46" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="440" y="4" width="46" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="440" y="4" width="46" height="15" forecolor="#000000" uuid="d3a0cfcc-f9bb-47e3-8c39-7cc2887601cf"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Value]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="328" y="4" width="26" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="328" y="4" width="26" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="328" y="4" width="26" height="15" forecolor="#000000" uuid="307edead-9b8b-47b5-b4e6-3eb0d11b81bb"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[GST%]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="357" y="4" width="26" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="357" y="4" width="26" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="357" y="4" width="26" height="15" forecolor="#000000" uuid="0c971cad-f059-4756-8978-a5551a91b001"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Qty]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="508" y="4" width="43" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="508" y="4" width="43" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="508" y="4" width="43" height="15" forecolor="#000000" uuid="0604cb0e-8981-431d-b607-621f502e415a"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[TOTAL]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="4" y="4" width="16" height="13" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="4" y="4" width="16" height="13" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="4" y="4" width="16" height="13" forecolor="#000000" uuid="d11d0547-baba-4cdc-9b3a-62f2f7ad5233"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[#]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="386" y="4" width="46" height="15" forecolor="#000000" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="386" y="4" width="46" height="15" forecolor="#000000" />
-=======
-				<reportElement style="Column header" x="386" y="4" width="46" height="15" forecolor="#000000" uuid="89eb04e6-32db-4b98-8bc0-56ba297cefdd"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Rate]]></text>
 			</staticText>
 			<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 				<reportElement x="-1" y="2" width="1" height="16" forecolor="#666666" />
 			</line>
 			<line>
@@ -1610,28 +855,12 @@ WHERE
 			</line>
 			<line>
 				<reportElement x="434" y="3" width="1" height="16" forecolor="#666666" />
-<<<<<<< Updated upstream
-=======
-=======
-				<reportElement x="-1" y="2" width="1" height="16" forecolor="#666666" uuid="84baf770-e0ae-41b4-abfb-a2f2b046387c"/>
-			</line>
-			<line>
-				<reportElement x="554" y="3" width="1" height="16" forecolor="#666666" uuid="740dc924-0974-4d2c-b9da-69c85beeae72"/>
-			</line>
-			<line>
-				<reportElement x="434" y="3" width="1" height="16" forecolor="#666666" uuid="9381131e-4589-411f-850b-c5a2b09ac7b9"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 			</line>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="14" splitType="Stretch">
 			<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 				<reportElement stretchType="RelativeToTallestObject" x="20" y="0" width="1" height="14" forecolor="#666666" />
 			</line>
 			<line>
@@ -1651,181 +880,75 @@ WHERE
 			</line>
 			<textField pattern="#,##0.00">
 				<reportElement style="Detail" x="489" y="1" width="62" height="13" />
-<<<<<<< Updated upstream
-=======
-=======
-				<reportElement stretchType="RelativeToTallestObject" x="20" y="0" width="1" height="14" forecolor="#666666" uuid="e6f8f288-7bf9-4b02-8004-d7b750e6fa41"/>
-			</line>
-			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="80" y="0" width="1" height="14" isPrintInFirstWholeBand="true" forecolor="#666666" uuid="423d142f-772a-4707-adc7-4469b0b11558"/>
-			</line>
-			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="327" y="0" width="1" height="14" forecolor="#666666" uuid="4bbb03fd-c886-4446-8c8f-a066eb5719d8"/>
-			</line>
-			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="355" y="0" width="1" height="14" forecolor="#666666" uuid="ff1be3a4-86cd-4a40-83a2-20cf0e7442c8"/>
-			</line>
-			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="387" y="0" width="1" height="14" forecolor="#666666" uuid="93d088e1-868a-46ee-bca2-f7364c98ec02"/>
-			</line>
-			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="488" y="0" width="1" height="14" forecolor="#666666" uuid="3277b478-64b6-49b9-957d-f9edf70224eb"/>
-			</line>
-			<textField pattern="#,##0.00">
-				<reportElement style="Detail" x="489" y="1" width="62" height="13" uuid="69a44cfa-24ba-4683-808a-9875db82c73a"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_net_amount}]]></textFieldExpression>
 			</textField>
 			<textField>
-<<<<<<< Updated upstream
 				<reportElement style="Detail" x="4" y="1" width="16" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Detail" x="4" y="1" width="16" height="13" />
-=======
-				<reportElement style="Detail" x="4" y="1" width="16" height="13" uuid="075f6de6-4166-4618-9a2f-9a9dab59f760"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.0">
-<<<<<<< Updated upstream
 				<reportElement style="Detail" x="330" y="1" width="21" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Detail" x="330" y="1" width="21" height="13" />
-=======
-				<reportElement style="Detail" x="330" y="1" width="21" height="13" uuid="f6e74086-d7d9-457f-aae4-f67a215392d2"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_gst_percentage}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-<<<<<<< Updated upstream
 				<reportElement x="389" y="1" width="41" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement x="389" y="1" width="41" height="13" />
-=======
-				<reportElement x="389" y="1" width="41" height="13" uuid="7e3f9567-8984-445b-92e9-7f919e0353db"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{unit_price_after_tax}]]></textFieldExpression>
 			</textField>
 			<textField>
-<<<<<<< Updated upstream
 				<reportElement style="Detail" x="357" y="1" width="26" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Detail" x="357" y="1" width="26" height="13" />
-=======
-				<reportElement style="Detail" x="357" y="1" width="26" height="13" uuid="e799e18a-2826-4a88-8865-c85f6997ed9b"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_quantity}]]></textFieldExpression>
 			</textField>
 			<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 				<reportElement stretchType="RelativeToTallestObject" x="-1" y="-1" width="1" height="14" forecolor="#666666" />
 			</line>
 			<textField>
 				<reportElement style="Detail" x="24" y="1" width="55" height="13" />
-<<<<<<< Updated upstream
-=======
-=======
-				<reportElement stretchType="RelativeToTallestObject" x="-1" y="-1" width="1" height="14" forecolor="#666666" uuid="3e7fe5ad-9a54-4a2b-985e-478b73ef8c40"/>
-			</line>
-			<textField>
-				<reportElement style="Detail" x="24" y="1" width="55" height="13" uuid="62e49387-2ad6-41c3-83ee-f89a203a9429"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_hsn_code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-<<<<<<< Updated upstream
 				<reportElement style="Detail" x="85" y="1" width="238" height="13" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Detail" x="85" y="1" width="238" height="13" />
-=======
-				<reportElement style="Detail" x="85" y="1" width="238" height="13" uuid="bcf10ef3-d83a-48ac-a7b6-505d6ace3c9c"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_item_name}]]></textFieldExpression>
 			</textField>
 			<line>
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
->>>>>>> Stashed changes
 				<reportElement stretchType="RelativeToTallestObject" x="554" y="-1" width="1" height="15" forecolor="#666666" />
 			</line>
 			<textField pattern="#,##0.00">
 				<reportElement style="Detail" x="438" y="1" width="48" height="13" />
-<<<<<<< Updated upstream
-=======
-=======
-				<reportElement stretchType="RelativeToTallestObject" x="554" y="-1" width="1" height="15" forecolor="#666666" uuid="dab69913-fcf0-4eb8-a6a9-8689581ba46a"/>
-			</line>
-			<textField pattern="#,##0.00">
-				<reportElement style="Detail" x="438" y="1" width="48" height="13" uuid="31467d57-d978-481a-8f30-79b944273d2e"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{unit_price_after_tax}]]></textFieldExpression>
 			</textField>
 			<line>
-<<<<<<< Updated upstream
 				<reportElement stretchType="RelativeToTallestObject" x="434" y="0" width="1" height="14" forecolor="#666666" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement stretchType="RelativeToTallestObject" x="434" y="0" width="1" height="14" forecolor="#666666" />
-=======
-				<reportElement stretchType="RelativeToTallestObject" x="434" y="0" width="1" height="14" forecolor="#666666" uuid="450b017d-a57e-4939-970b-91c7a39720cc"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 			</line>
 		</band>
 	</detail>
 	<columnFooter>
 		<band height="1" splitType="Stretch">
 			<line>
-<<<<<<< Updated upstream
 				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" />
-=======
-				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" uuid="adfacbd7-1c94-4fb7-9714-33a5cbd96abd"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
@@ -1835,15 +958,7 @@ WHERE
 	<pageFooter>
 		<band height="18" splitType="Stretch">
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement mode="Transparent" x="154" y="4" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement mode="Transparent" x="154" y="4" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF" />
-=======
-				<reportElement mode="Transparent" x="154" y="4" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF" uuid="604a812a-f59f-4411-9fc3-0d47d00ba580"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="SansSerif" size="8" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -1851,30 +966,14 @@ WHERE
 				<text><![CDATA[Powered by : essaar software solutions, Mob:+91 9447819557]]></text>
 			</staticText>
 			<textField>
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="459" y="3" width="80" height="14" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="459" y="3" width="80" height="14" />
-=======
-				<reportElement style="Column header" x="459" y="3" width="80" height="14" uuid="5901d3f1-766b-4447-8597-d1e693922ae6"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-<<<<<<< Updated upstream
 				<reportElement style="Column header" x="512" y="3" width="40" height="12" />
-=======
-<<<<<<< Updated upstream:src/com/essar/reports/b2b_1.jrxml
-				<reportElement style="Column header" x="512" y="3" width="40" height="12" />
-=======
-				<reportElement style="Column header" x="512" y="3" width="40" height="12" uuid="ca48f264-d875-46ad-985a-6b2ce0032b15"/>
->>>>>>> Stashed changes:src/com/essar/reports/b2b_Acc_1.jrxml
->>>>>>> Stashed changes
 				<textElement textAlignment="Right">
 					<font size="8" isBold="false"/>
 				</textElement>

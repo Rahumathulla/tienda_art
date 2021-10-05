@@ -644,11 +644,7 @@ WHERE
 				<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
 				<reportElement x="134" y="2" width="283" height="36" />
-=======
-				<reportElement x="134" y="-1" width="283" height="36" />
->>>>>>> Stashed changes
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="28" isBold="true"/>
 				</textElement>

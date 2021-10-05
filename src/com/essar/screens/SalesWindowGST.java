@@ -202,7 +202,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         lblCustomerType = new javax.swing.JLabel();
         cmbCustomerType = new javax.swing.JComboBox();
         cmdReset = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        lblBillNumber = new javax.swing.JLabel();
         lblUnitPrice1 = new javax.swing.JLabel();
         txtSellingPrice = new javax.swing.JTextField();
         lblUnitPrice2 = new javax.swing.JLabel();
@@ -470,13 +470,9 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-<<<<<<< Updated upstream
-        jLabel2.setForeground(new java.awt.Color(0, 153, 255));
-=======
-        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
->>>>>>> Stashed changes
-        jLabel2.setText("Bill Number:");
+        lblBillNumber.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lblBillNumber.setForeground(new java.awt.Color(0, 153, 255));
+        lblBillNumber.setText("Bill Number:");
 
         lblUnitPrice1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblUnitPrice1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -545,11 +541,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
 
         lblSalesDate.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-<<<<<<< Updated upstream
         lblSalesDate.setForeground(new java.awt.Color(0, 153, 255));
-=======
-        lblSalesDate.setForeground(new java.awt.Color(51, 153, 255));
->>>>>>> Stashed changes
         lblSalesDate.setText("Sales Date");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Payment Type"));
@@ -1169,7 +1161,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                                     .addComponent(cmbCustomerName, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(pnlSupplierLayout.createSequentialGroup()
                                     .addGroup(pnlSupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel2)
+                                        .addComponent(lblBillNumber)
                                         .addComponent(txtBillNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(10, 10, 10)
                                     .addGroup(pnlSupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1219,7 +1211,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnlSupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlSupplierLayout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addComponent(lblBillNumber)
                                 .addGap(4, 4, 4)
                                 .addComponent(txtBillNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(pnlSupplierLayout.createSequentialGroup()
@@ -1461,17 +1453,11 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
             reportString="src\\com\\essar\\reports\\b2c.jrxml";
             desiredPrinter = b2c_printer;
         }*/
-<<<<<<< Updated upstream
+
         desiredPrinter = b2b_printer;
         reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
         if(chkBankDetails.isSelected())
             reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
-=======
-        reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
-        if(chkBankDetails.isSelected())
-            reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
-        desiredPrinter = b2b_printer;
->>>>>>> Stashed changes
 
         //reportString="src\\com\\essar\\reports\\b2c.jrxml";
         JasperReport jr = null;
@@ -3090,7 +3076,6 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
     private com.toedter.calendar.JDateChooser dtpSalesDate;
     private javax.swing.ButtonGroup grpSalesType;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -3100,6 +3085,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JLabel lblAvailableQty;
+    private javax.swing.JLabel lblBillNumber;
     private javax.swing.JLabel lblCGst;
     private javax.swing.JLabel lblCPrice;
     private javax.swing.JLabel lblCess;
