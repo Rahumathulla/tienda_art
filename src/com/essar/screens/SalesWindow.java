@@ -1447,13 +1447,18 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         String reportString="";
         String desiredPrinter = "";
 
-        if(txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()){
+        /*if(txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()){
             reportString="src\\com\\essar\\reports\\b2b.jrxml";
             desiredPrinter = b2b_printer;
         }else{
             reportString="src\\com\\essar\\reports\\b2c.jrxml";
             desiredPrinter = b2c_printer;
-        }
+        }*/
+        
+        desiredPrinter = b2b_printer;
+        reportString="src\\com\\essar\\reports\\b2b.jrxml";
+        if(chkBankDetails.isSelected())
+            reportString="src\\com\\essar\\reports\\b2b_Acc.jrxml";
 
         //reportString="src\\com\\essar\\reports\\b2c.jrxml";
         JasperReport jr = null;

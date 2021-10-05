@@ -532,9 +532,9 @@ public class SalesFind extends javax.swing.JFrame implements ActionListener{
             //dtpFromDate.setDate(new Date());
             Calendar cal = Calendar.getInstance();
             System.out.println("Today : " + cal.getTime());
-            cal.add(Calendar.DATE, -30);
+            cal.add(Calendar.DATE, -365);
            
-            System.out.println("30 days ago: " + cal.getTime());
+            System.out.println("365 days ago: " + cal.getTime());
             dtpFromDate.setDate(cal.getTime());
             // Substract 30 days from the calendar
             //dtpFromDate.setDate(new Date(cal.add(Calendar.DATE, -30)));

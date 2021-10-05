@@ -1446,13 +1446,17 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         String reportString="";
         String desiredPrinter = "";
 
-        if(txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()){
+        /*if(txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()){
             reportString="src\\com\\essar\\reports\\b2b.jrxml";
             desiredPrinter = b2b_printer;
         }else{
             reportString="src\\com\\essar\\reports\\b2c.jrxml";
             desiredPrinter = b2c_printer;
-        }
+        }*/
+        desiredPrinter = b2b_printer;
+        reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
+        if(chkBankDetails.isSelected())
+            reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
 
         //reportString="src\\com\\essar\\reports\\b2c.jrxml";
         JasperReport jr = null;
@@ -1487,9 +1491,9 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         }else{
             reportString="src\\com\\essar\\reports\\b2b.jrxml";
         }*/
-        reportString="src\\com\\essar\\reports\\b2b.jrxml";
+        reportString="src\\com\\essar\\reports\\b2b_1.jrxml";
         if(chkBankDetails.isSelected())
-            reportString="src\\com\\essar\\reports\\b2b_Acc.jrxml";
+            reportString="src\\com\\essar\\reports\\b2b_Acc_1.jrxml";
         JasperReport jr = null;
         HashMap map = new HashMap();
         map.put("bill_no",txtBillNumber.getText());
