@@ -111,6 +111,25 @@ public class EstimateDAO {
         return billNumber;
     }
     
+    public double getBalanceAmount(long customerId) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double balanceAmount = 0;
+        try {
+
+            sql = "SELECT SUM(balance_amount) FROM dsales " +
+                " WHERE customer_id ="+customerId;            
+            Statement st = con.createStatement();
+            rs = st.executeQuery(sql);
+            while(rs.next()){
+               balanceAmount = rs.getDouble(1);                                  
+            }
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductCategory.class.getName()).log(Level.SEVERE, null, ex);
+        }        
+        return balanceAmount;
+    }
+    
     public boolean doesSalesBillExist(String billNumber) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         boolean existCheck = false;

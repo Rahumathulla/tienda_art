@@ -356,7 +356,7 @@
                   <Component id="spnSalesItems" min="-2" pref="306" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="114" max="32767" attributes="0"/>
+                  <EmptySpace pref="122" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1709,11 +1709,11 @@
                   <Color blue="66" green="33" red="0" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="Delivery Charge"/>
+                <Property name="text" type="java.lang.String" value="Previous Balance"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="840" y="190" width="104" height="34"/>
+                  <AbsoluteConstraints x="1090" y="180" width="104" height="34"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -1793,8 +1793,11 @@
             </Component>
             <Component class="javax.swing.JTextField" name="txtPreviousBalance">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="24" style="0"/>
+                  <Font name="Tahoma" size="18" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="66" type="rgb"/>
@@ -1811,14 +1814,14 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="960" y="190" width="107" height="-1"/>
+                  <AbsoluteConstraints x="1200" y="180" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JTextField" name="txtPayingAmount">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="24" style="0"/>
+                  <Font name="Tahoma" size="18" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="99" red="33" type="rgb"/>
@@ -1846,7 +1849,7 @@
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="24" style="0"/>
+                  <Font name="Tahoma" size="18" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="66" type="rgb"/>

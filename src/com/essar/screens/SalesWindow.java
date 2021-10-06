@@ -1010,11 +1010,12 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         });
         jPanel1.add(chkPayBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, 35));
 
+        lblSGst7.setBackground(new java.awt.Color(0, 204, 204));
         lblSGst7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst7.setForeground(new java.awt.Color(0, 51, 102));
         lblSGst7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblSGst7.setText("Delivery Charge");
-        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 190, 104, 34));
+        lblSGst7.setText("Previous Balance");
+        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 180, 104, 34));
 
         lblSGst5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst5.setForeground(new java.awt.Color(51, 153, 0));
@@ -1052,16 +1053,17 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         });
         jPanel1.add(txtAmountPayable, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 30, 210, 59));
 
-        txtPreviousBalance.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtPreviousBalance.setBackground(new java.awt.Color(255, 255, 204));
+        txtPreviousBalance.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtPreviousBalance.setForeground(new java.awt.Color(102, 102, 102));
         txtPreviousBalance.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPreviousBalance.setText("$$");
         txtPreviousBalance.setAutoscrolls(false);
         txtPreviousBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtPreviousBalance.setMaximumSize(new java.awt.Dimension(21, 6));
-        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 190, 107, -1));
+        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 180, 100, -1));
 
-        txtPayingAmount.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtPayingAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtPayingAmount.setForeground(new java.awt.Color(51, 153, 255));
         txtPayingAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPayingAmount.setText("$$");
@@ -1076,7 +1078,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         jPanel1.add(txtPayingAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 100, 100, -1));
 
         txtBalanceAmount.setEditable(false);
-        txtBalanceAmount.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtBalanceAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtBalanceAmount.setForeground(new java.awt.Color(102, 102, 102));
         txtBalanceAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtBalanceAmount.setText("$$");
@@ -1194,7 +1196,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(spnSalesItems, javax.swing.GroupLayout.PREFERRED_SIZE, 1300, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
+                .addContainerGap(139, Short.MAX_VALUE))
         );
         pnlSupplierLayout.setVerticalGroup(
             pnlSupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1273,8 +1275,8 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(spnSalesItems, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(152, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1283,14 +1285,14 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(pnlSupplier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87))
+                .addComponent(pnlSupplier, javax.swing.GroupLayout.PREFERRED_SIZE, 1450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(pnlSupplier, javax.swing.GroupLayout.PREFERRED_SIZE, 852, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 100, Short.MAX_VALUE))
+                .addComponent(pnlSupplier, javax.swing.GroupLayout.PREFERRED_SIZE, 896, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 56, Short.MAX_VALUE))
         );
 
         pack();
@@ -1320,6 +1322,8 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         try {
             txtBalanceAmount.setText(GenericUtils.roundDouble(Double.parseDouble(txtAmountPayable.getText()) - Double.parseDouble(txtPayingAmount.getText()), 2)+"");
         } catch (Exception e) {
+            txtPayingAmount.setText("0");
+            txtBalanceAmount.setText(GenericUtils.roundDouble(Double.parseDouble(txtAmountPayable.getText()),2)+"");
         }
     }//GEN-LAST:event_txtPayingAmountKeyReleased
 
@@ -1552,7 +1556,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             renderCustomerDataIntoDropDown(customerDAO.retrieveAll());
 
             //Moved to Bill type Drop Down for different series of billing
-            /*SalesDAO billGenDAO =  new SalesDAO();
+            /*EstimateDAO billGenDAO =  new SalesDAO();
             txtBillNumber.setText(billGenDAO.generateBillNumber()+"");*/
             //((DefaultTableModel)tblSalesDetails.getModel()).setNumRows(0);
             btnSave.setText("Save");
@@ -1759,7 +1763,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             gSalesPercentage = ((PricingTier)(cmbCustomerType.getSelectedItem())).getPricingPercentage();
             System.out.println("-----"+gSalesPercentage + " for "+ ((PricingTier)(cmbCustomerType.getSelectedItem())).getCustomerTypeName());
             //====06/18 : Brought here from New button action
-            SalesDAO billGenDAO =  new SalesDAO();
+            EstimateDAO billGenDAO =  new EstimateDAO();
             //long openBills = 0;
             billType = ((PricingTier)(cmbCustomerType.getSelectedItem())).getCustomerTypeName();
             /*if(billGenDAO.doesOpenBillExists(txtBillNumber.getText())){
@@ -1868,11 +1872,17 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         // TODO add your handling code here:
         if(evt.getKeyCode()== KeyEvent.VK_ENTER && null!=txtItemName.getText() && !("".equalsIgnoreCase(txtItemName.getText()))){
             populateItemDetails();
+        }else if(evt.getKeyCode() == KeyEvent.VK_F4 && null!= txtAmountPayable.getText()){
+            txtPayingAmount.requestFocus();
+            txtPayingAmount.selectAll();            
         }
+
+        
     }//GEN-LAST:event_txtItemNameKeyReleased
 
     private void txtItemNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtItemNameKeyPressed
         // TODO add your handling code here:
+
     }//GEN-LAST:event_txtItemNameKeyPressed
 
     private void txtItemNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtItemNameActionPerformed
@@ -2166,7 +2176,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         hsnColumn.setPreferredWidth(100);
         hsnColumn.setMaxWidth(100);
         
-        SalesDAO navigationDAO =  new SalesDAO();
+        EstimateDAO navigationDAO =  new EstimateDAO();
         List<Long> idMaxMin = navigationDAO.getMaxAndMinIds();
         minId = idMaxMin.get(0);
         maxId = idMaxMin.get(1);
@@ -2270,7 +2280,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         
     public void saveSalesForm(){
 
-        SalesDAO billGenDAO =  new SalesDAO();
+        EstimateDAO billGenDAO =  new EstimateDAO();
         Sales sales = new Sales();
         sales.setBillNumber(txtBillNumber.getText());
         sales.setSalesDate(dtpSalesDate.getDate());
@@ -2335,7 +2345,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             salesDetailsList.add(salesDetails);
         }         
         sales.setSalesDetails(salesDetailsList);
-        SalesDAO salesDAO =  new SalesDAO();
+        EstimateDAO salesDAO =  new EstimateDAO();
         for(int i=0; i<moreMap.size();i++){
             System.out.println("--key :: "+moreMap.keySet());
             System.out.println("--value :: "+moreMap.values());
@@ -2346,7 +2356,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
     
     public void updateSalesAfterReturn(List<SalesReturn> returnList){
 
-        //SalesDAO billGenDAO =  new SalesDAO();
+        //EstimateDAO billGenDAO =  new SalesDAO();
         //!@-- 03/15/2020
         deriveValuesFromSalesInput();
         
@@ -2418,7 +2428,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             }
         }       
         sales.setSalesDetails(moreItemsList); 
-        SalesDAO salesDAO =  new SalesDAO();
+        EstimateDAO salesDAO =  new EstimateDAO();
         /*for(int i=0; i<moreMap.size();i++){
             System.out.println("--key :: "+moreMap.keySet());
             System.out.println("--value :: "+moreMap.values());
@@ -2590,6 +2600,9 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
         txtDiscountAmount.setText(sales.getDiscount()+"");
         txtAmountPayable.setText(sales.getPayableAmount()+"");
         txtBalanceAmount.setText(sales.getBalanceAmount()+"");
+        // !@#06/10/2021
+        txtPayingAmount.setText(sales.getPayableAmount()-sales.getBalanceAmount()+"");
+        //--END--
         txtTotalGst.setText(sales.getTotalGst()+"");
         txtSGst.setText(sales.getSgst()+"");
         txtCGst.setText(sales.getCgst()+"");
@@ -2802,7 +2815,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             renderCustomerDataIntoDropDown(customerDAO.retrieveAll());
 
             //Moved to Bill type Drop Down for different series of billing
-            /*SalesDAO billGenDAO =  new SalesDAO();
+            /*EstimateDAO billGenDAO =  new SalesDAO();
             txtBillNumber.setText(billGenDAO.generateBillNumber()+"");*/
             ((DefaultTableModel)tblSalesDetails.getModel()).setNumRows(0);
             btnSave.setText("Save");
@@ -2915,6 +2928,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             txtShippingAddress.setText("");
             txtDisplayName.setVisible(true);
             lblDisplayName.setVisible(true);
+            
             //txtDisplayName.requestFocus();
         }else{
             txtDisplayName.setText(((Customer) cmbCustomerName.getSelectedItem()).getCustomerName()+", \n"+((Customer) cmbCustomerName.getSelectedItem()).getAddress());
@@ -2923,14 +2937,14 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
             lblDisplayName.setVisible(true);
             //txtVehicleDetails.requestFocus();
             //!@#--Commented Since the client doesn't need the actual balance calculation logic
-            /*SalesDAO balanceDAO = new SalesDAO();
+            EstimateDAO balanceDAO = new EstimateDAO();
             double balanceAmount = balanceDAO.getBalanceAmount(((Customer) cmbCustomerName.getSelectedItem()).getCustomerId());
             if(balanceAmount>0)
                 chkPayBalance.setEnabled(true);
             else
                 chkPayBalance.setEnabled(false);
             txtPreviousBalance.setText(balanceAmount+"");
-                System.out.println("Balance="+balanceAmount);*/
+                System.out.println("Balance="+balanceAmount);
         }
     }
             

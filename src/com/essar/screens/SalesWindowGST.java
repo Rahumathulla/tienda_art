@@ -1012,8 +1012,8 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         lblSGst7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst7.setForeground(new java.awt.Color(0, 51, 102));
         lblSGst7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblSGst7.setText("Delivery Charge");
-        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 190, 104, 34));
+        lblSGst7.setText("Previous Balance");
+        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 180, 104, 34));
 
         lblSGst5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst5.setForeground(new java.awt.Color(51, 153, 0));
@@ -1051,16 +1051,17 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         });
         jPanel1.add(txtAmountPayable, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 30, 210, 59));
 
-        txtPreviousBalance.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtPreviousBalance.setBackground(new java.awt.Color(255, 255, 204));
+        txtPreviousBalance.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtPreviousBalance.setForeground(new java.awt.Color(102, 102, 102));
         txtPreviousBalance.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPreviousBalance.setText("$$");
         txtPreviousBalance.setAutoscrolls(false);
         txtPreviousBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtPreviousBalance.setMaximumSize(new java.awt.Dimension(21, 6));
-        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 190, 107, -1));
+        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 180, 100, -1));
 
-        txtPayingAmount.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtPayingAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtPayingAmount.setForeground(new java.awt.Color(51, 153, 255));
         txtPayingAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtPayingAmount.setText("$$");
@@ -1075,7 +1076,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         jPanel1.add(txtPayingAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 100, 100, -1));
 
         txtBalanceAmount.setEditable(false);
-        txtBalanceAmount.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtBalanceAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtBalanceAmount.setForeground(new java.awt.Color(102, 102, 102));
         txtBalanceAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtBalanceAmount.setText("$$");
@@ -1273,7 +1274,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 .addComponent(spnSalesItems, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1319,6 +1320,8 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         try {
             txtBalanceAmount.setText(GenericUtils.roundDouble(Double.parseDouble(txtAmountPayable.getText()) - Double.parseDouble(txtPayingAmount.getText()), 2)+"");
         } catch (Exception e) {
+            txtPayingAmount.setText("0");
+            txtBalanceAmount.setText(GenericUtils.roundDouble(Double.parseDouble(txtAmountPayable.getText()),2)+"");
         }
     }//GEN-LAST:event_txtPayingAmountKeyReleased
 
@@ -1859,6 +1862,9 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
         if(evt.getKeyCode()== KeyEvent.VK_ENTER && null!=txtItemName.getText() && !("".equalsIgnoreCase(txtItemName.getText()))){
             populateItemDetails();
+        }else if(evt.getKeyCode() == KeyEvent.VK_F4 && null!= txtAmountPayable.getText()){
+            txtPayingAmount.requestFocus();
+            txtPayingAmount.selectAll();            
         }
     }//GEN-LAST:event_txtItemNameKeyReleased
 
@@ -2709,6 +2715,9 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         txtDiscountAmount.setText(sales.getDiscount()+"");
         txtAmountPayable.setText(sales.getPayableAmount()+"");
         txtBalanceAmount.setText(sales.getBalanceAmount()+"");
+        // !@#06/10/2021
+        txtPayingAmount.setText(sales.getPayableAmount()-sales.getBalanceAmount()+"");
+        //--END--
         txtTotalGst.setText(sales.getTotalGst()+"");
         txtSGst.setText(sales.getSgst()+"");
         txtCGst.setText(sales.getCgst()+"");
@@ -3042,14 +3051,14 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
             lblDisplayName.setVisible(true);
             //txtVehicleDetails.requestFocus();
             //!@#--Commented Since the client doesn't need the actual balance calculation logic
-            /*SalesDAO balanceDAO = new SalesDAO();
+            SalesDAO balanceDAO = new SalesDAO();
             double balanceAmount = balanceDAO.getBalanceAmount(((Customer) cmbCustomerName.getSelectedItem()).getCustomerId());
             if(balanceAmount>0)
                 chkPayBalance.setEnabled(true);
             else
                 chkPayBalance.setEnabled(false);
             txtPreviousBalance.setText(balanceAmount+"");
-                System.out.println("Balance="+balanceAmount);*/
+                System.out.println("Balance="+balanceAmount);
         }
     }
             
