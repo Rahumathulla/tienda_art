@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3c81775f-2ad4-40ed-a80a-7842690896bb">
-=======
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cbe85bc9-0988-44ed-aff6-6e26864f2746">
->>>>>>> Stashed changes
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.2100000000000002"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -30,86 +26,50 @@ FROM
 		<band/>
 	</background>
 	<title>
-		<band height="97">
+		<band height="98">
 			<frame>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="0" y="-13" width="555" height="94" forecolor="#FFFFFF" backcolor="#006699" uuid="e6da0de7-b3d1-441a-9234-4520b87dcc11"/>
+				<reportElement mode="Opaque" x="0" y="0" width="553" height="87" backcolor="#006699" />
 				<line>
-					<reportElement x="167" y="36" width="280" height="1" forecolor="#FFFFFF" uuid="4dcba962-2c49-4094-ac9a-8d2908696724"/>
-=======
-				<reportElement mode="Opaque" x="0" y="-13" width="555" height="94" forecolor="#FFFFFF" backcolor="#006699" uuid="9a67edce-065b-4195-b16d-ec16aba2f4cb"/>
-				<line>
-					<reportElement x="167" y="36" width="280" height="1" forecolor="#FFFFFF" uuid="845b4747-321d-4e02-9c14-44b76209278b"/>
->>>>>>> Stashed changes
+					<reportElement x="150" y="35" width="280" height="1" forecolor="#FFFFFF" />
 					<graphicElement>
 						<pen lineWidth="0.75" lineStyle="Dotted"/>
 					</graphicElement>
 				</line>
 				<staticText>
-<<<<<<< Updated upstream
-					<reportElement x="161" y="50" width="283" height="14" forecolor="#FFFFFF" uuid="7df46bd1-c11a-45f0-ba06-d76d5ceb5f3d"/>
+					<reportElement x="150" y="50" width="283" height="14" forecolor="#FFFFFF" />
 					<textElement textAlignment="Center">
 						<font size="10" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="161" y="37" width="283" height="14" forecolor="#FFFFFF" uuid="2197f825-687b-4b28-986a-43312e2fe724"/>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" size="10" isBold="true"/>
-					</textElement>
-					<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="161" y="1" width="283" height="36" forecolor="#FFFFFF" uuid="b573a5ba-e700-4b12-8488-bef8d459eda2"/>
+					<reportElement x="151" y="0" width="274" height="36" forecolor="#FFFFFF" />
 					<textElement textAlignment="Center">
 						<font fontName="SansSerif" size="28" isBold="true"/>
 					</textElement>
 					<text><![CDATA[A.R. TRADERS]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="161" y="62" width="283" height="14" forecolor="#FFFFFF" uuid="10c27b65-8842-4341-8f4b-da00b7c09c48"/>
+					<reportElement x="150" y="36" width="283" height="14" forecolor="#FFFFFF" />
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="150" y="73" width="283" height="14" forecolor="#FFFFFF" />
 					<textElement textAlignment="Center">
 						<font size="10" isBold="true"/>
 					</textElement>
 					<text><![CDATA[email:artradersvpm@gmail.com]]></text>
 				</staticText>
-=======
-					<reportElement x="170" y="67" width="283" height="13" forecolor="#FFFFFF" uuid="2e962cf4-48a1-4a20-a397-bb1112391755"/>
+				<staticText>
+					<reportElement x="150" y="64" width="283" height="13" forecolor="#FFFFFF" />
 					<textElement textAlignment="Center">
 						<font fontName="SansSerif" size="10" isBold="true"/>
 					</textElement>
 					<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
 				</staticText>
-				<staticText>
-					<reportElement x="170" y="76" width="283" height="14" forecolor="#FFFFFF" uuid="4c7e7d17-022c-4a53-93f2-9013aad2179b"/>
-					<textElement textAlignment="Center">
-						<font size="10" isBold="true"/>
-					</textElement>
-					<text><![CDATA[email:artradersvpm@gmail.com]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="170" y="53" width="283" height="14" forecolor="#FFFFFF" uuid="e9986f37-dca9-4905-81f9-6739e2bc09bb"/>
-					<textElement textAlignment="Center">
-						<font size="10" isBold="true"/>
-					</textElement>
-					<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="170" y="39" width="283" height="14" forecolor="#FFFFFF" uuid="cabc8f62-2a15-440b-a343-64abd7ff65b3"/>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" size="10" isBold="true"/>
-					</textElement>
-					<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="171" y="3" width="274" height="36" forecolor="#FFFFFF" uuid="fc7a0ed2-3b89-44d8-b5b3-5b63cdcb2470"/>
-					<textElement textAlignment="Center">
-						<font fontName="SansSerif" size="28" isBold="true"/>
-					</textElement>
-					<text><![CDATA[A.R. TRADERS]]></text>
-				</staticText>
->>>>>>> Stashed changes
 			</frame>
 		</band>
 	</title>
@@ -119,77 +79,49 @@ FROM
 	<columnHeader>
 		<band height="17">
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="2" y="0" width="36" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="d0e5246e-d9e2-4340-8c72-1560b3187868"/>
-=======
-				<reportElement mode="Opaque" x="2" y="0" width="36" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="2d2ee6cd-1ef9-42aa-bb78-7f6c32fb7274"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="2" y="0" width="36" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement>
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Sl.No:]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="100" y="0" width="194" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="a92c162b-ab65-4c15-af3b-447a98b01975"/>
-=======
-				<reportElement mode="Opaque" x="100" y="0" width="194" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="b0d68bbf-d093-4d54-b20b-073b52724109"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="100" y="0" width="194" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement>
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Item Name]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="294" y="0" width="101" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="478707d5-bf7f-425f-a559-db0b3f225c24"/>
-=======
-				<reportElement mode="Opaque" x="294" y="0" width="101" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="5eb14ea9-ca7f-4fe3-b2c1-3bd03a644284"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="294" y="0" width="101" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement>
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Category]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="395" y="0" width="39" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="1f2b9acb-e5b5-4b7f-8007-5c285f182b5c"/>
-=======
-				<reportElement mode="Opaque" x="395" y="0" width="39" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="2cabc6a7-a5a8-4c23-88e4-75f11a9c9677"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="395" y="0" width="39" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Right">
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GST%]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="434" y="0" width="51" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="8354caff-bb11-4190-a283-738a2d54b610"/>
-=======
-				<reportElement mode="Opaque" x="434" y="0" width="51" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="5412f064-653b-43e7-8905-cba78659f34f"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="434" y="0" width="51" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Right">
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Quantity]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="485" y="0" width="68" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="41d99f70-7cc4-402e-b67f-dbe2478ed55d"/>
-=======
-				<reportElement mode="Opaque" x="485" y="0" width="68" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="7bfd4110-5814-4998-b263-08349ca3bab9"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="485" y="0" width="68" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Center">
 					<font size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Re-order Qty]]></text>
 			</staticText>
 			<staticText>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="37" y="0" width="63" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="25c7b82a-546c-446b-a87b-3ea1ed558485"/>
-=======
-				<reportElement mode="Opaque" x="37" y="0" width="63" height="17" forecolor="#006699" backcolor="#E6E6E6" uuid="60160e94-9a75-4960-ae7a-3dad787cf7d7"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="37" y="0" width="63" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement>
 					<font size="10" isBold="true"/>
 				</textElement>
@@ -200,77 +132,49 @@ FROM
 	<detail>
 		<band height="13">
 			<textField isStretchWithOverflow="true">
-<<<<<<< Updated upstream
-				<reportElement x="35" y="0" width="63" height="13" uuid="86d3ff5a-dafe-48c6-9d80-9db592be4c10"/>
-=======
-				<reportElement x="35" y="0" width="63" height="13" uuid="b9be40cb-49c3-42e7-8d7f-ab404e32bb01"/>
->>>>>>> Stashed changes
+				<reportElement x="35" y="0" width="63" height="13"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_hsn_code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-<<<<<<< Updated upstream
-				<reportElement x="100" y="0" width="189" height="13" uuid="d4a8b5a9-6629-4cf5-9bc4-be0d64c867c6"/>
-=======
-				<reportElement x="100" y="0" width="189" height="13" uuid="ddf640ab-ab5f-4aa3-95d6-e8731eb8c41b"/>
->>>>>>> Stashed changes
+				<reportElement x="100" y="0" width="189" height="13"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_item_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-<<<<<<< Updated upstream
-				<reportElement x="294" y="0" width="116" height="13" uuid="b27ba345-a9df-4150-9d1f-43c88a756223"/>
-=======
-				<reportElement x="294" y="0" width="116" height="13" uuid="7f56f28c-3a6e-4874-81ed-8a178560020b"/>
->>>>>>> Stashed changes
+				<reportElement x="294" y="0" width="116" height="13"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_category}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="###0.0">
-<<<<<<< Updated upstream
-				<reportElement x="410" y="0" width="24" height="13" uuid="3270a7ca-1604-4fac-9ee0-998348638ea0"/>
-=======
-				<reportElement x="410" y="0" width="24" height="13" uuid="d8f41dc1-99c8-4d3a-9262-c66a7fb15a20"/>
->>>>>>> Stashed changes
+				<reportElement x="410" y="0" width="24" height="13"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_gst_percentage}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,##0.0">
-<<<<<<< Updated upstream
-				<reportElement x="448" y="0" width="37" height="13" uuid="966330ca-d6e5-4cef-b8ed-b0a484389e6b"/>
-=======
-				<reportElement x="448" y="0" width="37" height="13" uuid="1004f17b-5f2e-4f9e-90e7-932c3fd12905"/>
->>>>>>> Stashed changes
+				<reportElement x="448" y="0" width="37" height="13"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_quantity}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-<<<<<<< Updated upstream
-				<reportElement x="491" y="0" width="52" height="13" uuid="6b92b2cb-4f35-478a-8ad0-b437c239bd59"/>
-=======
-				<reportElement x="491" y="0" width="52" height="13" uuid="3c152093-1f94-434e-ae57-7b166dffb8a2"/>
->>>>>>> Stashed changes
+				<reportElement x="491" y="0" width="52" height="13"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{stock_reorder_quantity}]]></textFieldExpression>
 			</textField>
 			<textField>
-<<<<<<< Updated upstream
-				<reportElement x="2" y="0" width="33" height="13" uuid="b499af44-577f-4bc3-b240-972ebd622cd6"/>
-=======
-				<reportElement x="2" y="0" width="33" height="13" uuid="025d428d-7842-442b-be38-8a146788c60f"/>
->>>>>>> Stashed changes
+				<reportElement x="2" y="0" width="33" height="13"/>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -281,28 +185,16 @@ FROM
 	<pageFooter>
 		<band height="18">
 			<textField>
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="9119db46-493a-4307-8fad-712ab1d982d8"/>
-=======
-				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="892ad64b-9d4f-4e66-a9ed-d9a655906cd1"/>
->>>>>>> Stashed changes
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-<<<<<<< Updated upstream
-				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="9b3f950a-d1f4-4d30-a9c5-318a863c8a46"/>
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="0" y="4" width="100" height="13" uuid="06c178fc-a599-4870-a4c0-8acbad7edbbe"/>
-=======
-				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="c4b5d99d-7752-4fa8-963f-c1e271800a0e"/>
-				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement x="0" y="4" width="100" height="13" uuid="e286fd8f-bb67-471a-b7c9-1d77c20bde8a"/>
->>>>>>> Stashed changes
+				<reportElement x="0" y="4" width="100" height="13"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>
