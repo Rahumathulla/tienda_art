@@ -2332,7 +2332,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
     public boolean validateForm(){
         //btnSave.setText("Add");
         //btnSave.requestFocus();
-        if(gStockAvailable < Double.parseDouble(txtQuantity.getText())){
+        if(gStockAvailable < Double.parseDouble(txtQuantity.getText()) && stock.getMrp()>0){
             int choice = JOptionPane.showConfirmDialog(null, "This item is out of stock, are you sure to continue with Billing?");
             System.out.println("choice--"+choice);
             if(choice==0)
@@ -2658,12 +2658,12 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 , stock.getHsnCode()
                 , stock.getItemName()
                 , Double.parseDouble(txtMrp.getText())
-                , df.format(stock.getSellingPrice())
+                , df.format(Double.parseDouble(txtSellingPrice.getText()))
                 , stock.getGstPercentage()
                 , df.format(dDerivedGst * Double.parseDouble(txtQuantity.getText()))
                 ////,, df.format(stock.getUom())
                 , Double.parseDouble(txtQuantity.getText())
-                , df.format(stock.getSellingPrice() * Double.parseDouble(txtQuantity.getText()))
+                , df.format(Double.parseDouble(txtSellingPrice.getText()) * Double.parseDouble(txtQuantity.getText()))
                 , stock.getItemId()});
         //model.
                 
@@ -2959,13 +2959,16 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                     stock = stockDAO.retrieveByName(txtItemName.getText().trim());
                 }
                 txtHSNCode.setText(stock.getHsnCode());
-                txtUnitPrice.setText(stock.getPurchasePrice()+"");
+                //txtUnitPrice.setText(stock.getPurchasePrice()+"");
+                txtUnitPrice.setText(stock.getSellingPrice()+"");
                 if(stock.getMrp()>0){
                     txtMrp.setText(stock.getMrp()+"");
                     txtSellingPrice.requestFocus();
                 }else{
                     txtMrp.setText("0");
                     txtMrp.requestFocus();
+                    txtMrp.selectAll();
+                    txtUnitPrice.selectAll();
                 }
                 
                 //GST Amount Calculation
@@ -2991,11 +2994,11 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 lblPPIndicator.setText(df.format(stock.getPurchasePrice()));
                 //For Wholesale price logic
                 //if((txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()) && stock.getWholesalePrice()>0){
-                if(null!=txtBillNumber.getText() && stock.getWholesalePrice()>0){
+                /*if(null!=txtBillNumber.getText() && stock.getWholesalePrice()>0){
                     txtSellingPrice.setText(df.format(stock.getWholesalePrice()));
-                }else if (stock.getSellingPrice()>=0){
+                }else*/ if (stock.getSellingPrice()>=0){
                     txtSellingPrice.setText(df.format(stock.getSellingPrice()));
-                    lblWPIndicator.setText(df.format(stock.getWholesalePrice()));
+                    //lblWPIndicator.setText(df.format(stock.getWholesalePrice()));
                 }else{
                     txtSellingPrice.setText(df.format(dUnitSellingPrice)+"");
                 }

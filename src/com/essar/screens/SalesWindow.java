@@ -658,6 +658,11 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                 txtMrpActionPerformed(evt);
             }
         });
+        txtMrp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtMrpKeyReleased(evt);
+            }
+        });
 
         lblWPIndicator.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblWPIndicator.setForeground(new java.awt.Color(0, 153, 153));
@@ -1629,6 +1634,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
 
     private void txtMrpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMrpActionPerformed
         // TODO add your handling code here:
+
     }//GEN-LAST:event_txtMrpActionPerformed
 
     private void chkSameAsAboveKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chkSameAsAboveKeyReleased
@@ -1912,6 +1918,10 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
     private void chkBankDetailsKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_chkBankDetailsKeyReleased
         // TODO add your handling code here:
     }//GEN-LAST:event_chkBankDetailsKeyReleased
+
+    private void txtMrpKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMrpKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMrpKeyReleased
 
     /**
      * @param args the command line arguments
@@ -2217,7 +2227,7 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
     public boolean validateForm(){
         //btnSave.setText("Add");
         //btnSave.requestFocus();
-        if(gStockAvailable < Double.parseDouble(txtQuantity.getText())){
+        if(gStockAvailable < Double.parseDouble(txtQuantity.getText()) && stock.getMrp()>0){
             int choice = JOptionPane.showConfirmDialog(null, "This item is out of stock, are you sure to continue with Billing?");
             System.out.println("choice--"+choice);
             if(choice==0)
@@ -2543,12 +2553,12 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                 , stock.getHsnCode()
                 , stock.getItemName()
                 , Double.parseDouble(txtMrp.getText())
-                , df.format(stock.getSellingPrice())
+                , df.format(Double.parseDouble(txtSellingPrice.getText()))
                 , stock.getGstPercentage()
                 , df.format(dDerivedGst * Double.parseDouble(txtQuantity.getText()))
                 ////,, df.format(stock.getUom())
                 , Double.parseDouble(txtQuantity.getText())
-                , df.format(stock.getSellingPrice() * Double.parseDouble(txtQuantity.getText()))
+                , df.format(Double.parseDouble(txtSellingPrice.getText()) * Double.parseDouble(txtQuantity.getText()))
                 , stock.getItemId()});
         //model.
                 
@@ -2844,13 +2854,15 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                     stock = stockDAO.retrieveByName(txtItemName.getText().trim());
                 }
                 txtHSNCode.setText(stock.getHsnCode());
-                txtUnitPrice.setText(stock.getPurchasePrice()+"");
+                txtUnitPrice.setText(stock.getSellingPrice()+"");
                 if(stock.getMrp()>0){
                     txtMrp.setText(stock.getMrp()+"");
                     txtSellingPrice.requestFocus();
                 }else{
                     txtMrp.setText("0");
                     txtMrp.requestFocus();
+                    txtMrp.selectAll();
+                    txtUnitPrice.selectAll();
                 }
                 
                 //GST Amount Calculation
@@ -2876,11 +2888,12 @@ public class SalesWindow extends javax.swing.JFrame implements ActionListener{
                 lblPPIndicator.setText(df.format(stock.getPurchasePrice()));
                 //For Wholesale price logic
                 //if((txtBillNumber.getText().contains("B-") || chkWholesale.isSelected()) && stock.getWholesalePrice()>0){
-                if(null!=txtBillNumber.getText() && stock.getWholesalePrice()>0){
+                /*if(null!=txtBillNumber.getText() && stock.getWholesalePrice()>0 ){
                     txtSellingPrice.setText(df.format(stock.getWholesalePrice()));
-                }else if (stock.getSellingPrice()>=0){
+                }else*/
+                if (stock.getSellingPrice()>=0){
                     txtSellingPrice.setText(df.format(stock.getSellingPrice()));
-                    lblWPIndicator.setText(df.format(stock.getWholesalePrice()));
+                    //lblWPIndicator.setText(df.format(stock.getWholesalePrice()));
                 }else{
                     txtSellingPrice.setText(df.format(dUnitSellingPrice)+"");
                 }
