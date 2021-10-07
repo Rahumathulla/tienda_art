@@ -235,7 +235,7 @@ public class StockDateSelection extends javax.swing.JFrame implements ActionList
                     "          , item_id " +
                     "          , item_name " +
                     "          , SUM(quantity) AS quantity " +
-                    "      FROM Sales_details JOIN sales ON sales_details.sales_id = sales.sales_id  WHERE sales.sales_date "+dateComparer+" '"+ fromDate+"'" +
+                    "      FROM dsales_details JOIN dsales ON dsales_details.sales_id = sales.sales_id  WHERE sales.sales_date "+dateComparer+" '"+ fromDate+"'" +
                     "      GROUP BY " +
                     "            item_id " +
                     ") S ON I.item_id = S.item_id " +

@@ -239,7 +239,7 @@ public class StockDAO {
                                 + " FROM purchase_details WHERE item_id = "+stockId+ " OR item_name = '"+stockName+"'"
                         +" UNION" 
                         +" SELECT 3, CASE WHEN SUM(quantity) IS NULL THEN 0 ELSE SUM(quantity) END AS sold_quantity "
-                                + " FROM sales_details WHERE item_id = "+stockId+ " OR item_name = '"+stockName+"'"
+                                + " FROM dsales_details WHERE item_id = "+stockId+ " OR item_name = '"+stockName+"'"
                         +" UNION"
                         +" SELECT 4, CASE WHEN quantity IS NULL THEN 0 ELSE quantity  END AS closing_stock"
                                 + " FROM stock WHERE item_id = "+stockId+ " OR item_name = '"+stockName+"'";
