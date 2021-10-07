@@ -131,6 +131,7 @@ public class SalesSummarySelection extends javax.swing.JFrame implements ActionL
         jLabel1.setText("To");
 
         grpBillType.add(radB2C);
+        radB2C.setSelected(true);
         radB2C.setText("B2C");
         radB2C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +141,7 @@ public class SalesSummarySelection extends javax.swing.JFrame implements ActionL
 
         grpBillType.add(radB2B);
         radB2B.setText("B2B");
+        radB2B.setEnabled(false);
         radB2B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 radB2BActionPerformed(evt);

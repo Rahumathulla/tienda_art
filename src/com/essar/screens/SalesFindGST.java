@@ -133,9 +133,11 @@ public class SalesFindGST extends javax.swing.JFrame implements ActionListener{
 
         grpBillType.add(radB2B);
         radB2B.setText("B2B");
+        radB2B.setEnabled(false);
 
         grpBillType.add(radAll);
         radAll.setText("All");
+        radAll.setEnabled(false);
         radAll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 radAllActionPerformed(evt);
@@ -143,6 +145,7 @@ public class SalesFindGST extends javax.swing.JFrame implements ActionListener{
         });
 
         grpBillType.add(radB2C);
+        radB2C.setSelected(true);
         radB2C.setText("B2C");
         radB2C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
