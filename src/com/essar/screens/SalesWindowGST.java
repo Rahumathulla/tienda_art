@@ -1013,28 +1013,28 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         lblSGst7.setForeground(new java.awt.Color(0, 51, 102));
         lblSGst7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSGst7.setText("Previous Balance");
-        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 180, 104, 34));
+        jPanel1.add(lblSGst7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 150, 104, 34));
 
         lblSGst5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst5.setForeground(new java.awt.Color(51, 153, 0));
         lblSGst5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSGst5.setText("Amount Paid");
-        jPanel1.add(lblSGst5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 100, 104, 35));
+        jPanel1.add(lblSGst5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 70, 104, 35));
 
         lblSGst6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst6.setForeground(new java.awt.Color(204, 0, 51));
         lblSGst6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSGst6.setText("Balance Amount");
-        jPanel1.add(lblSGst6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 140, 104, 35));
+        jPanel1.add(lblSGst6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 110, 104, 35));
 
         lblSGst3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblSGst3.setForeground(new java.awt.Color(153, 153, 153));
         lblSGst3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSGst3.setText("Bill Total");
-        jPanel1.add(lblSGst3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1104, 7, 197, 16));
+        jPanel1.add(lblSGst3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1104, 3, 197, 20));
 
         txtAmountPayable.setEditable(false);
-        txtAmountPayable.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        txtAmountPayable.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         txtAmountPayable.setForeground(new java.awt.Color(102, 102, 255));
         txtAmountPayable.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtAmountPayable.setText("$$");
@@ -1049,7 +1049,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 txtAmountPayableKeyReleased(evt);
             }
         });
-        jPanel1.add(txtAmountPayable, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 30, 210, 59));
+        jPanel1.add(txtAmountPayable, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 25, 210, 40));
 
         txtPreviousBalance.setBackground(new java.awt.Color(255, 255, 204));
         txtPreviousBalance.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -1059,7 +1059,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         txtPreviousBalance.setAutoscrolls(false);
         txtPreviousBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtPreviousBalance.setMaximumSize(new java.awt.Dimension(21, 6));
-        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 180, 100, -1));
+        jPanel1.add(txtPreviousBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 150, 100, -1));
 
         txtPayingAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtPayingAmount.setForeground(new java.awt.Color(51, 153, 255));
@@ -1073,7 +1073,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
                 txtPayingAmountKeyReleased(evt);
             }
         });
-        jPanel1.add(txtPayingAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 100, 100, -1));
+        jPanel1.add(txtPayingAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 70, 100, -1));
 
         txtBalanceAmount.setEditable(false);
         txtBalanceAmount.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -1083,7 +1083,7 @@ public class SalesWindowGST extends javax.swing.JFrame implements ActionListener
         txtBalanceAmount.setAutoscrolls(false);
         txtBalanceAmount.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtBalanceAmount.setMaximumSize(new java.awt.Dimension(21, 6));
-        jPanel1.add(txtBalanceAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 140, 100, -1));
+        jPanel1.add(txtBalanceAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 110, 100, -1));
 
         chkBankDetails.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         chkBankDetails.setForeground(new java.awt.Color(0, 51, 102));

@@ -961,6 +961,7 @@ public class StockEntry extends javax.swing.JFrame implements ActionListener{
         txtSellingPrice.setText("");
         txtSellingPriceWS.setText("");
         txtLandingPrice.setText("");
+        chkDataFreeItem.setSelected(false);
         //chkAddGst.setSelected(false);
         //txtSuggestions.setVisible(false);
       

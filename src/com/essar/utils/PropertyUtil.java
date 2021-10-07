@@ -18,7 +18,7 @@ public class PropertyUtil {
         try {
         	//inStream = this.getClass().getResourceAsStream(propertiesPath+"/application.properties");
             prop = new Properties();
-            prop.load(new FileInputStream("D:\\Applications\\Tienda\\config_art.properties"));
+            prop.load(new FileInputStream("E:\\Applications\\Tienda\\config_art.properties"));
             //prop.load(new FileInputStream("application.properties"));
         } catch (IOException io) {
             JOptionPane.showConfirmDialog(null, "The configuration file is not found.");

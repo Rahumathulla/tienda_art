@@ -456,7 +456,7 @@ public class SalesDAO {
           
             int[] results = detailStatement.executeBatch();
             System.out.println("Size : "+salesDetailsList.size()+"| Final Details Statement :"+detailStatement.toString());
-            updateStockAfterSales(sales,salesDetailsList, trackActivity);
+            //updateStockAfterSales(sales,salesDetailsList, trackActivity);
             con.close();            
         } catch (SQLException ex) {
             Logger.getLogger(ProductCategory.class.getName()).log(Level.SEVERE, null, ex);
@@ -612,7 +612,7 @@ public class SalesDAO {
                 deleteStatement.executeUpdate();                
                 
             }
-            updateStockAfterSalesReturn(sales, returnList, trackActivity);
+            //updateStockAfterSalesReturn(sales, returnList, trackActivity);
             //con.close();            
         } catch (SQLException ex) {
             Logger.getLogger(ProductCategory.class.getName()).log(Level.SEVERE, null, ex);
