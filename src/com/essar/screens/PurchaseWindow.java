@@ -5,9 +5,11 @@
  */
 package com.essar.screens;
 
+import com.essar.dao.PricingTierDAO;
 import com.essar.dao.PurchaseDAO;
 import com.essar.dao.StockDAO;
 import com.essar.dao.SupplierDAO;
+import com.essar.pojos.PricingTier;
 import com.essar.suggestion.SuggestionExampleMain;
 import com.essar.utils.TableMouseListener;
 import com.essar.pojos.Purchase;
@@ -214,7 +216,6 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         setTitle("Purchase");
         setExtendedState(6);
         setName("frmProductCategory"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1423, 863));
 
         lblItemName.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblItemName.setText("Item Name");
@@ -541,6 +542,11 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         btnAddMore.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/plus.png"))); // NOI18N
         btnAddMore.setMnemonic('S');
         btnAddMore.setText("More");
+        btnAddMore.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddMoreActionPerformed(evt);
+            }
+        });
 
         btnReset.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reset.png"))); // NOI18N
@@ -607,7 +613,7 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
                                     .addComponent(radCredit)
                                     .addComponent(cmdReset)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPurchaseLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                 .addGroup(pnlPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblHSNCode, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtHSNCode, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -740,7 +746,7 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
                                     .addComponent(dtpPurchaseDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtInvoiceNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(cmbSupplierName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(pnlPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(pnlPurchaseLayout.createSequentialGroup()
                                         .addComponent(lblItemName)
@@ -783,8 +789,8 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtPurchasePrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(18, 18, 18)
-                .addComponent(spnPurchaseItems, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
+                .addComponent(spnPurchaseItems, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlPurchaseLayout.createSequentialGroup()
                         .addGroup(pnlPurchaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1129,6 +1135,15 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         }
     }//GEN-LAST:event_txtMrpKeyReleased
 
+    private void btnAddMoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddMoreActionPerformed
+        // TODO add your handling code here:
+        enableFormElements(true);
+        SuggestionExampleMain.populateItemNames(this, txtItemName);
+        SupplierDAO supplierDAO = new SupplierDAO();
+        renderDataIntoDropDown(supplierDAO.retrieveAll());
+        txtItemName.requestFocus();
+    }//GEN-LAST:event_btnAddMoreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1264,14 +1279,14 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         tblPurchaseDetails.addMouseListener(new TableMouseListener(tblPurchaseDetails));
         
         TableColumn idColumn = tblPurchaseDetails.getColumnModel().getColumn(tblPurchaseDetails.getColumnCount()-1);
-        idColumn.setPreferredWidth(0);
-        idColumn.setMinWidth(0);
-        idColumn.setMaxWidth(0);
+        idColumn.setPreferredWidth(90);
+        idColumn.setMinWidth(90);
+        idColumn.setMaxWidth(90);
         
         TableColumn itemColumn = tblPurchaseDetails.getColumnModel().getColumn(tblPurchaseDetails.getColumnCount()-2);
-        itemColumn.setPreferredWidth(0);
-        itemColumn.setMinWidth(0);
-        itemColumn.setMaxWidth(0);
+        itemColumn.setPreferredWidth(90);
+        itemColumn.setMinWidth(90);
+        itemColumn.setMaxWidth(90);
         
         TableColumn itemNameColumn = tblPurchaseDetails.getColumnModel().getColumn(1);
         itemNameColumn.setPreferredWidth(400);
@@ -1555,7 +1570,7 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         PurchaseDetails purchaseDetails = null;
         List<PurchaseDetails> moreItemsList =  new ArrayList<PurchaseDetails>();
         for(int i=0;i<purchaseDetailsModel.getRowCount();i++){//Newly added items logic
-            if(purchaseDetailsModel.getValueAt(i, purchaseDetailsModel.getRowCount()-1)==null){
+            if(purchaseDetailsModel.getValueAt(i, 11)==null){
                 System.out.println("--!@#"+purchaseDetailsModel.getValueAt(i, 1).toString());
                 purchaseDetails = new PurchaseDetails();
                 purchaseDetails.setHsnCode(purchaseDetailsModel.getValueAt(i, 0).toString());
@@ -1683,7 +1698,7 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         currentId = purchase.getPurchaseId();
         btnSave.setText("Update");
         btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update.png")));
-        //btnAddMore.setVisible(true);
+        btnAddMore.setVisible(true);
         dtpPurchaseDate.setEnabled(true);
         mnuPurchaseActions.removeAll();
         
@@ -1735,6 +1750,7 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
                     , purchaseDetailsList.get(i).getNetAmount()
                     , 0
                     , 0
+                    , purchaseDetailsList.get(i).getMrp()
                     , purchaseDetailsList.get(i).getItemId()
                     , purchaseDetailsList.get(i).getPurchaseDetailsId()});
         }
@@ -1853,6 +1869,20 @@ public class PurchaseWindow extends javax.swing.JFrame implements ActionListener
         // checks if there's still something unsaved
         // this method always return true for demo purpose
         return true;
+    }
+    
+    public void renderDataIntoDropDown(List<Supplier> supplierList){
+        Supplier supplier = null;
+        cmbSupplierName.removeAllItems();
+        if(supplierList!= null){
+            for(int i=0; i<supplierList.size();i++){
+                cmbSupplierName.addItem(supplierList.get(i));
+            }
+            cmbSupplierName.setSelectedIndex(0);
+            supplier = (Supplier)cmbSupplierName.getSelectedItem();
+            //cmbCustomerType.gets
+            //System.out.println("----------"+cmbCustomerType.getSelectedItem()+"::"+pricingTier.getPricingPercentage());
+        }
     }
 
 
