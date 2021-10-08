@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
-	<property name="ireport.zoom" value="1.3310000000000006"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="48"/>
+	<property name="ireport.y" value="24"/>
 	<import value="java.util.Date"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
@@ -28,7 +28,7 @@
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<subDataset name="Table Dataset 1" />
+	<subDataset name="Table Dataset 1"/>
 	<parameter name="bill_no" class="java.lang.String">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -42,7 +42,7 @@
      sales.`sales_date` AS sales_date,
      sales.`discount` AS sales_discount,
      sales.`payable_amount` AS sales_payable_amount,
-	 sales.`balance_amount` AS sales_balance_amount,
+     sales.`balance_amount` AS sales_balance_amount,
      sales.`total_gst` AS sales_total_gst,
      sales.`sgst` AS sales_sgst,
      sales.`cgst` AS sales_cgst,
@@ -150,119 +150,75 @@ WHERE
 		<groupFooter>
 			<band height="79">
 				<line>
-					<reportElement x="0" y="0" width="555" height="1" forecolor="#666666" />
+					<reportElement x="0" y="0" width="555" height="1" forecolor="#666666"/>
 				</line>
 				<line>
-					<reportElement x="554" y="0" width="1" height="64" forecolor="#666666" />
+					<reportElement x="554" y="0" width="1" height="64" forecolor="#666666"/>
 				</line>
 				<line>
-					<reportElement x="-1" y="64" width="556" height="1" forecolor="#666666" />
+					<reportElement x="-1" y="64" width="556" height="1" forecolor="#666666"/>
 				</line>
-				<line>
-					<reportElement x="-1" y="0" width="1" height="64" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<staticText>
-					<reportElement style="Column header" x="264" y="66" width="75" height="13" forecolor="#000000" />
-					<textElement textAlignment="Center">
-						<font fontName="Arial Narrow" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[E.& O.E.]]></text>
-				</staticText>
-				<textField pattern="#,##0.00;-#,##0.00">
-					<reportElement style="Detail" x="488" y="48" width="63" height="14" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_payable_amount}-$F{sales_balance_amount}]]></textFieldExpression>
-				</textField>
-				<textField pattern="#,##0.00;-#,##0.00">
-					<reportElement style="Detail" x="175" y="48" width="63" height="14" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_previous_balance}+$F{sales_balance_amount}]]></textFieldExpression>
-				</textField>
 				<textField pattern="#,##0">
-					<reportElement style="Detail" x="460" y="28" width="74" height="20" />
+					<reportElement style="Detail" x="462" y="28" width="74" height="20"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="12" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{sales_payable_amount}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="530" y="28" width="21" height="20" />
+					<reportElement x="532" y="28" width="21" height="20"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[.00]]></text>
 				</staticText>
-				<textField pattern="###0.00;-###0.00">
-					<reportElement style="Detail" x="487" y="14" width="63" height="14" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_round_off}]]></textFieldExpression>
-				</textField>
 				<staticText>
-					<reportElement style="Column header" x="374" y="28" width="76" height="20" forecolor="#000000" />
+					<reportElement style="Column header" x="376" y="28" width="76" height="20" forecolor="#000000"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="12"/>
 					</textElement>
 					<text><![CDATA[Grand Total]]></text>
 				</staticText>
 				<staticText>
-					<reportElement style="Column header" x="434" y="14" width="52" height="14" forecolor="#000000" />
+					<reportElement style="Column header" x="436" y="14" width="52" height="14" forecolor="#000000"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[Round Off :]]></text>
 				</staticText>
-				<textField pattern="#,##0.00;-#,##0.00">
-					<reportElement style="Detail" x="175" y="18" width="63" height="14" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_previous_balance}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement style="Column header" x="0" y="33" width="175" height="14" forecolor="#000000" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="10" isItalic="true"/>
-					</textElement>
-					<text><![CDATA[Adjusted  Amount with Current Bill:]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="356" y="49" width="93" height="14" forecolor="#000000" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="10" isItalic="true"/>
-					</textElement>
-					<text><![CDATA[Amount Paid]]></text>
-				</staticText>
-				<textField pattern="#,##0.00;-#,##0.00">
-					<reportElement style="Detail" x="175" y="33" width="63" height="14" />
-					<textElement textAlignment="Right" verticalAlignment="Bottom">
-						<font fontName="Arial Narrow" size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_balance_amount}]]></textFieldExpression>
-				</textField>
 				<textField pattern="###0.00;-###0.00">
-					<reportElement style="Detail" x="487" y="1" width="63" height="14" >
-						<printWhenExpression><![CDATA[$F{sales_cess}>0]]></printWhenExpression>
-					</reportElement>
+					<reportElement style="Detail" x="489" y="14" width="63" height="14"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{sales_cess}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{sales_round_off}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="-1" y="0" width="1" height="64" isPrintWhenDetailOverflows="true" forecolor="#666666"/>
+				</line>
+				<staticText>
+					<reportElement style="Column header" x="264" y="66" width="75" height="13" forecolor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Narrow" size="9" isBold="false" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[E.& O.E.]]></text>
+				</staticText>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement style="Detail" x="177" y="48" width="63" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sales_previous_balance}+$F{sales_balance_amount}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement style="Column header" x="0" y="48" width="175" height="14" forecolor="#000000" />
+					<reportElement style="Column header" x="2" y="48" width="175" height="14" forecolor="#000000"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="10" isItalic="true"/>
 					</textElement>
-					<text><![CDATA[Balance Outstanding:]]></text>
+					<text><![CDATA[Balance Outstanding :]]></text>
 				</staticText>
 				<staticText>
-					<reportElement style="Column header" x="434" y="1" width="52" height="14" forecolor="#000000" >
+					<reportElement style="Column header" x="436" y="1" width="52" height="14" forecolor="#000000">
 						<printWhenExpression><![CDATA[$F{sales_cess} >0]]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
@@ -270,112 +226,118 @@ WHERE
 					</textElement>
 					<text><![CDATA[Cess Amount :]]></text>
 				</staticText>
+				<textField pattern="###0.00;-###0.00">
+					<reportElement style="Detail" x="489" y="1" width="63" height="14">
+						<printWhenExpression><![CDATA[$F{sales_cess}>0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sales_cess}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement style="Detail" x="177" y="18" width="63" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sales_previous_balance}]]></textFieldExpression>
+				</textField>
 				<staticText>
-					<reportElement style="Column header" x="0" y="18" width="175" height="14" forecolor="#000000" />
+					<reportElement style="Column header" x="2" y="18" width="175" height="14" forecolor="#000000"/>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font fontName="Arial Narrow" size="10" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[Previous Balance:]]></text>
 				</staticText>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement style="Detail" x="177" y="33" width="63" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sales_balance_amount}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Column header" x="2" y="33" width="175" height="14" forecolor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="10" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Adjusted  Amount with Current Bill:]]></text>
+				</staticText>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement style="Detail" x="490" y="48" width="63" height="14"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sales_payable_amount}-$F{sales_balance_amount}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Column header" x="358" y="49" width="93" height="14" forecolor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial Narrow" size="10" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Amount Paid]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="65" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF">
+						<printWhenExpression><![CDATA[$V{REPORT_COUNT}<10]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+						<font fontName="SansSerif" size="8" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Powered by : essaar software solutions, Mob:+91 9447819557]]></text>
+				</staticText>
 			</band>
 			<band height="76">
 				<staticText>
-					<reportElement style="Column header" x="2" y="43" width="67" height="15" forecolor="#000000" />
+					<reportElement style="Column header" x="2" y="43" width="67" height="15" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+					</reportElement>
 					<textElement>
 						<font fontName="Arial Narrow" size="9" isItalic="true" isUnderline="true"/>
 					</textElement>
 					<text><![CDATA[Declaration]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="412" y="5" width="33" height="14" />
+					<reportElement x="412" y="5" width="33" height="14"/>
 					<textElement textAlignment="Right" verticalAlignment="Top">
 						<font fontName="Monotype Corsiva" size="9" isItalic="true" isStrikeThrough="false"/>
 					</textElement>
 					<text><![CDATA[for]]></text>
 				</staticText>
 				<staticText>
-					<reportElement style="Column header" x="445" y="5" width="108" height="15" forecolor="#000000" />
+					<reportElement style="Column header" x="445" y="5" width="108" height="15" forecolor="#000000"/>
 					<textElement textAlignment="Right">
 						<font size="9" isItalic="true"/>
 					</textElement>
 					<text><![CDATA[AR Traders]]></text>
 				</staticText>
 				<staticText>
-					<reportElement style="Column header" x="2" y="50" width="288" height="15" forecolor="#000000" />
+					<reportElement style="Column header" x="2" y="50" width="288" height="15" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+					</reportElement>
 					<textElement verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="9" isBold="false" isItalic="true" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[We declare that this invoice shows the actual price of the ]]></text>
 				</staticText>
 				<staticText>
-					<reportElement style="Column header" x="2" y="61" width="277" height="15" forecolor="#000000" />
+					<reportElement style="Column header" x="2" y="61" width="277" height="15" forecolor="#000000">
+						<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+					</reportElement>
 					<textElement verticalAlignment="Bottom">
 						<font fontName="SansSerif" size="9" isBold="false" isItalic="true" isUnderline="false"/>
 					</textElement>
 					<text><![CDATA[goods described and that all particulars are true and correct.]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="438" y="59" width="116" height="14" />
+					<reportElement x="438" y="59" width="116" height="14">
+						<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+					</reportElement>
 					<textElement textAlignment="Right" verticalAlignment="Bottom">
 						<font size="9" isItalic="true" isStrikeThrough="false"/>
 					</textElement>
 					<text><![CDATA[Authorized Signatory]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="1" y="26" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[IFSC Code : ]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="1" y="-14" width="202" height="15" forecolor="#000000" />
-					<box>
-						<pen lineColor="#000000"/>
-						<topPen lineColor="#000000"/>
-						<leftPen lineColor="#000000"/>
-						<bottomPen lineColor="#000000"/>
-						<rightPen lineColor="#000000"/>
-					</box>
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[Our Bank Details :]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="1" y="-1" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[Account Name: ]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="1" y="13" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[Account No:   ]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="97" y="-1" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[AR TRADERS]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="97" y="13" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[12121321342423]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" x="97" y="27" width="92" height="13" forecolor="#000000" />
-					<textElement>
-						<font fontName="SansSerif" size="9" isBold="false" isUnderline="false"/>
-					</textElement>
-					<text><![CDATA[IFSC]]></text>
 				</staticText>
 			</band>
 		</groupFooter>
@@ -386,46 +348,19 @@ WHERE
 			<band/>
 		</groupHeader>
 		<groupFooter>
-			<band height="50">
+			<band>
 				<printWhenExpression><![CDATA[$P{REPORT_MAX_COUNT}<15]]></printWhenExpression>
-				<line>
-					<reportElement x="20" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="80" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="327" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="355" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="387" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="434" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="554" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="-1" y="-1" width="1" height="51" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
-				<line>
-					<reportElement x="488" y="0" width="1" height="50" isPrintWhenDetailOverflows="true" forecolor="#666666" />
-				</line>
 			</band>
 			<band height="19">
 				<textField pattern="#,##0.00">
-					<reportElement style="Detail" x="483" y="2" width="67" height="14" />
+					<reportElement style="Detail" x="483" y="2" width="67" height="14"/>
 					<textElement textAlignment="Right" verticalAlignment="Top">
 						<font fontName="Arial Narrow" size="10" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$V{total_net}]]></textFieldExpression>
 				</textField>
 				<textField pattern="#,##0.00" isBlankWhenNull="false">
-					<reportElement style="Detail" mode="Transparent" x="347" y="4" width="40" height="15" forecolor="#000000" backcolor="#FFFFFF" />
+					<reportElement style="Detail" mode="Transparent" x="347" y="4" width="40" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
 					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 						<font fontName="Arial Narrow" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 						<paragraph lineSpacing="Single"/>
@@ -433,21 +368,21 @@ WHERE
 					<textFieldExpression><![CDATA[$V{total_quantity}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="Detail" x="69" y="2" width="286" height="15" />
+					<reportElement style="Detail" x="69" y="2" width="286" height="15"/>
 					<textElement>
 						<font fontName="Arial Narrow" size="10"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{amount_in_words}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement style="Column header" x="1" y="2" width="65" height="15" forecolor="#000000" />
+					<reportElement style="Column header" x="1" y="2" width="65" height="15" forecolor="#000000"/>
 					<textElement>
 						<font fontName="Arial Narrow" size="9"/>
 					</textElement>
 					<text><![CDATA[Amount in words: ]]></text>
 				</staticText>
 				<line>
-					<reportElement x="0" y="0" width="555" height="1" />
+					<reportElement x="0" y="0" width="555" height="1"/>
 					<graphicElement>
 						<pen lineColor="#666666"/>
 					</graphicElement>
@@ -459,144 +394,104 @@ WHERE
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="215" splitType="Stretch">
+		<band height="147" splitType="Stretch">
 			<staticText>
-				<reportElement x="134" y="64" width="283" height="13" />
-				<textElement textAlignment="Center">
+				<reportElement x="4" y="63" width="149" height="13"/>
+				<textElement>
 					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GSTIN:32AKRPM9079N1Z6]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="195" y="115" width="159" height="18" />
+				<reportElement x="192" y="63" width="159" height="18"/>
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="12" isBold="true" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[TAX INVOICE]]></text>
+				<text><![CDATA[ESTIMATE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="1" y="118" width="65" height="15" forecolor="#000000" />
-				<textElement>
+				<reportElement style="Column header" x="430" y="79" width="68" height="15" forecolor="#000000"/>
+				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Invoice No :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="430" y="118" width="70" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="428" y="63" width="70" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Invoice Date :]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy">
-				<reportElement x="500" y="118" width="54" height="15" />
+				<reportElement x="499" y="63" width="54" height="15"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Column header" x="3" y="152" width="89" height="12" forecolor="#000000" />
+				<reportElement style="Column header" x="2" y="99" width="89" height="12" isRemoveLineWhenBlank="true" forecolor="#000000">
+					<printWhenExpression><![CDATA[$F{sales_customer_name}!=null && $F{sales_customer_name}!=""]]></printWhenExpression>
+				</reportElement>
 				<textElement>
 					<font size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Customer Details :]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="false">
-				<reportElement style="SubTitle" mode="Transparent" x="3" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
+				<reportElement style="SubTitle" mode="Transparent" x="2" y="111" width="151" height="36" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{sales_customer_name}!=null && $F{sales_customer_name}!=""]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_customer_name}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="443" y="16" width="108" height="19" forecolor="#000000" />
-				<textElement textAlignment="Right">
-					<font fontName="Arial" size="9"/>
-				</textElement>
-				<text><![CDATA[Original for Recipient]]></text>
-			</staticText>
 			<textField pattern="###0" isBlankWhenNull="false">
-				<reportElement style="SubTitle" mode="Transparent" x="66" y="118" width="59" height="15" forecolor="#000000" backcolor="#FFFFFF" />
-				<textElement verticalAlignment="Top" rotation="None" markup="none">
+				<reportElement style="SubTitle" mode="Transparent" x="499" y="79" width="55" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_bill_number}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement mode="Transparent" x="443" y="27" width="108" height="12" forecolor="#000000" backcolor="#FFFFFF" />
-				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
-					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
-					<paragraph lineSpacing="Single"/>
-				</textElement>
-				<text><![CDATA[Duplicate for Transporter]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Transparent" x="443" y="40" width="108" height="13" forecolor="#000000" backcolor="#FFFFFF" />
-				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
-					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
-					<paragraph lineSpacing="Single"/>
-				</textElement>
-				<text><![CDATA[Triplicate for Supplier]]></text>
-			</staticText>
 			<line>
-				<reportElement x="0" y="149" width="556" height="1" />
+				<reportElement x="0" y="94" width="556" height="1"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineStyle="Dotted" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="240" y="133" width="70" height="15" forecolor="#000000" />
-				<textElement textAlignment="Center" verticalAlignment="Bottom">
-					<font size="10"/>
-				</textElement>
-				<text><![CDATA[CASH BILL]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="134" y="51" width="283" height="14" />
+				<reportElement x="90" y="41" width="359" height="14"/>
 				<textElement textAlignment="Center">
 					<font size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ph:+91 9447003552, 9567123458.]]></text>
+				<text><![CDATA[Ph:+91 9447003552, 9567123458 | email:artradersvpm@gmail.com]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="134" y="76" width="283" height="14" />
-				<textElement textAlignment="Center">
-					<font size="10" isBold="true"/>
-				</textElement>
-				<text><![CDATA[email:artradersvpm@gmail.com]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="134" y="38" width="283" height="14" />
+				<reportElement x="90" y="28" width="359" height="14"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Vamanapuram P.O., Thiruvananthapuram, Kerala. 695606]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="134" y="2" width="283" height="36" />
+				<reportElement x="90" y="-2" width="359" height="38"/>
 				<textElement textAlignment="Center">
-					<font fontName="SansSerif" size="28" isBold="true"/>
+					<font fontName="SansSerif" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[A.R. TRADERS]]></text>
 			</staticText>
 			<line>
-				<reportElement x="126" y="37" width="316" height="1" forecolor="#666666" />
+				<reportElement x="133" y="26" width="275" height="2" forecolor="#666666"/>
 				<graphicElement>
 					<pen lineWidth="0.75" lineStyle="Dotted"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="1" y="89" width="65" height="29" forecolor="#000000" />
-				<textElement verticalAlignment="Bottom">
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Column header" x="198" y="152" width="89" height="12" forecolor="#000000" >
+				<reportElement style="Column header" x="244" y="99" width="89" height="12" isRemoveLineWhenBlank="true" forecolor="#000000">
 					<printWhenExpression><![CDATA[$F{sales_shipping_address}!=null && $F{sales_shipping_address}!=""]]></printWhenExpression>
 				</reportElement>
 				<textElement>
@@ -605,7 +500,9 @@ WHERE
 				<text><![CDATA[Shipping Address:]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement style="SubTitle" mode="Transparent" x="198" y="164" width="150" height="50" forecolor="#000000" backcolor="#FFFFFF" />
+				<reportElement style="SubTitle" mode="Transparent" x="244" y="111" width="150" height="36" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{sales_shipping_address}!=null && $F{sales_shipping_address}!=""]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -613,7 +510,7 @@ WHERE
 				<textFieldExpression><![CDATA[$F{sales_shipping_address}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Column header" x="395" y="164" width="89" height="13" forecolor="#000000" >
+				<reportElement style="Column header" x="394" y="111" width="89" height="13" isRemoveLineWhenBlank="true" forecolor="#000000">
 					<printWhenExpression><![CDATA[$F{sales_vehicle_details}!=null && $F{sales_vehicle_details}!=""]]></printWhenExpression>
 				</reportElement>
 				<textElement textAlignment="Right">
@@ -622,13 +519,20 @@ WHERE
 				<text><![CDATA[Vehicle Details : ]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement style="SubTitle" mode="Transparent" x="484" y="164" width="70" height="13" forecolor="#000000" backcolor="#FFFFFF" />
+				<reportElement style="SubTitle" mode="Transparent" x="483" y="111" width="70" height="13" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFFF"/>
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="Arial" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="1_1_2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_vehicle_details}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement style="Column header" x="4" y="77" width="149" height="15" forecolor="#000000"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(Composition Taxable Person)]]></text>
+			</staticText>
 		</band>
 	</title>
 	<pageHeader>
@@ -638,193 +542,193 @@ WHERE
 		<band height="19" splitType="Stretch">
 			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="2" width="555" height="1" />
+				<reportElement positionType="FixRelativeToBottom" x="0" y="2" width="555" height="1"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="18" width="555" height="1" />
+				<reportElement positionType="FixRelativeToBottom" x="0" y="18" width="555" height="1"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
 			</line>
 			<line>
-				<reportElement x="20" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="20" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="80" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="80" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="327" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="327" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="355" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="355" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="387" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="387" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="488" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="488" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="24" y="4" width="55" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="24" y="4" width="55" height="15" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[HSN/SAC]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="85" y="4" width="155" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="85" y="4" width="155" height="15" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Item Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="440" y="4" width="46" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="440" y="4" width="46" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Value]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="328" y="4" width="26" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="328" y="4" width="26" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[GST%]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="357" y="4" width="26" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="357" y="4" width="26" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Qty]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="508" y="4" width="43" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="508" y="4" width="43" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[TOTAL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="4" y="4" width="16" height="13" forecolor="#000000" />
+				<reportElement style="Column header" x="4" y="4" width="16" height="13" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[#]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="386" y="4" width="46" height="15" forecolor="#000000" />
+				<reportElement style="Column header" x="386" y="4" width="46" height="15" forecolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<text><![CDATA[Rate]]></text>
 			</staticText>
 			<line>
-				<reportElement x="-1" y="2" width="1" height="16" forecolor="#666666" />
+				<reportElement x="-1" y="2" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="554" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="554" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement x="434" y="3" width="1" height="16" forecolor="#666666" />
+				<reportElement x="434" y="3" width="1" height="16" forecolor="#666666"/>
 			</line>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="14" splitType="Stretch">
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="20" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="20" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="80" y="0" width="1" height="14" isPrintInFirstWholeBand="true" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="80" y="0" width="1" height="14" isPrintInFirstWholeBand="true" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="327" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="327" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="355" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="355" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="387" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="387" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="488" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="488" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 			<textField pattern="#,##0.00">
-				<reportElement style="Detail" x="489" y="1" width="62" height="13" />
+				<reportElement style="Detail" x="489" y="1" width="62" height="13"/>
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_net_amount}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement style="Detail" x="4" y="1" width="16" height="13" />
+				<reportElement style="Detail" x="4" y="1" width="16" height="13"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.0">
-				<reportElement style="Detail" x="330" y="1" width="21" height="13" />
+				<reportElement style="Detail" x="330" y="1" width="21" height="13"/>
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_gst_percentage}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="389" y="1" width="41" height="13" />
+				<reportElement x="389" y="1" width="41" height="13"/>
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{unit_price_after_tax}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement style="Detail" x="357" y="1" width="26" height="13" />
+				<reportElement style="Detail" x="357" y="1" width="26" height="13"/>
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_quantity}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="-1" y="-1" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="-1" y="-1" width="1" height="15" forecolor="#666666"/>
 			</line>
 			<textField>
-				<reportElement style="Detail" x="24" y="1" width="55" height="13" />
+				<reportElement style="Detail" x="24" y="1" width="55" height="13"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_hsn_code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" x="85" y="1" width="238" height="13" />
+				<reportElement style="Detail" x="85" y="1" width="238" height="13"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_details_item_name}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="554" y="-1" width="1" height="15" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="554" y="-1" width="1" height="15" forecolor="#666666"/>
 			</line>
 			<textField pattern="#,##0.00">
-				<reportElement style="Detail" x="438" y="1" width="48" height="13" />
+				<reportElement style="Detail" x="438" y="1" width="48" height="13"/>
 				<textElement textAlignment="Right" verticalAlignment="Bottom">
 					<font fontName="Arial Narrow" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{unit_price_after_tax}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement stretchType="RelativeToTallestObject" x="434" y="0" width="1" height="14" forecolor="#666666" />
+				<reportElement stretchType="RelativeToTallestObject" x="434" y="0" width="1" height="14" forecolor="#666666"/>
 			</line>
 		</band>
 	</detail>
 	<columnFooter>
 		<band height="1" splitType="Stretch">
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" />
+				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1"/>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#666666"/>
 				</graphicElement>
@@ -834,7 +738,9 @@ WHERE
 	<pageFooter>
 		<band height="18" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Transparent" x="154" y="4" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF" />
+				<reportElement mode="Transparent" x="154" y="4" width="263" height="14" forecolor="#666666" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
 					<font fontName="SansSerif" size="8" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -842,14 +748,18 @@ WHERE
 				<text><![CDATA[Powered by : essaar software solutions, Mob:+91 9447819557]]></text>
 			</staticText>
 			<textField>
-				<reportElement style="Column header" x="459" y="3" width="80" height="14" />
+				<reportElement style="Column header" x="459" y="3" width="80" height="14">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Right">
 					<font size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement style="Column header" x="512" y="3" width="40" height="12" />
+				<reportElement style="Column header" x="512" y="3" width="40" height="12">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}>10]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Right">
 					<font size="8" isBold="false"/>
 				</textElement>
